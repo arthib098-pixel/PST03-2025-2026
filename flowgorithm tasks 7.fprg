@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowgorithm tasks 7"/>
+        <attribute name="authors" value="sridu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-06 03:15:26 PM"/>
+        <attribute name="created" value="c3JpZHU7REVTS1RPUC0zTjRUNTYxOzIwMjYtMDEtMDY7MDI6NDc6MTYgUE07MjgzNg=="/>
+        <attribute name="edited" value="c3JpZHU7REVTS1RPUC0zTjRUNTYxOzIwMjYtMDEtMDY7MDM6MTU6MjYgUE07MTsyOTQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3" type="Integer" array="False" size=""/>
+            <assign variable="num1" expression="5"/>
+            <assign variable="num2" expression="10"/>
+            <assign variable="num3" expression="12"/>
+            <if expression="num1&lt;=num2">
+                <then>
+                    <output expression="num2" newline="True"/>
+                    <if expression="num3&lt;=num1">
+                        <then>
+                            <output expression="num1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="num3" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="num1" newline="True"/>
+                    <if expression="num2&lt;=num3">
+                        <then>
+                            <output expression="num3" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="num2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
