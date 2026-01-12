@@ -1,0 +1,1303 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Online Java Compiler - Programiz  </title>
+  <link rel="shortcut icon" href="https://www.programiz.com/sites/tutorial2program/files/favicon.png" />
+  <link rel="stylesheet" href="https://fonts.programiz.com/fonts.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+  <link rel="canonical" href="https://www.programiz.com/java-programming/online-compiler/" />
+  <meta name="description" content="Write and run your Java code using our online compiler. Enjoy additional features like code sharing, dark mode, and support for multiple programming languages." />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://programiz.com/java-programming/online-compiler/" />
+  <meta property="og:title" content="Online Java Compiler - Programiz" />
+  <meta property="og:description" content="Write and run your Java code using our online compiler. Enjoy additional features like code sharing, dark mode, and support for multiple programming languages." />
+  <meta property="og:image" content="https://programiz.com/online-compiler/assets/logos/compiler_logo.png" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://programiz.com/java-programming/online-compiler/" />
+  <meta name="twitter:title" content="Online Java Compiler - Programiz">
+  <meta name="twitter:description" content="Write and run your Java code using our online compiler. Enjoy additional features like code sharing, dark mode, and support for multiple programming languages." />
+  <meta name="twitter:image" content="https://programiz.com/online-compiler/assets/logos/compiler_logo.png" />
+
+  <!-- CMP and header ad code start -->
+  <script>
+    var url = window.location.href;
+    window.googletag = window.googletag || {
+      cmd: []
+    };
+    window.googletag.cmd.push(function () {
+      switch (true) {
+        case url.includes("/python-programming/numpy"):
+          window.googletag.pubads().setTargeting('prog_lang', 'numpy');
+          break;
+        case url.includes("/sql"):
+          window.googletag.pubads().setTargeting('prog_lang', 'sql');
+          break;
+        case url.includes("/c-programming"):
+          window.googletag.pubads().setTargeting('prog_lang', 'c_programming');
+          break;
+        case url.includes("/cpp-programming"):
+          window.googletag.pubads().setTargeting('prog_lang', 'c_plus_plus');
+          break;
+        case url.includes("/csharp-programming"):
+          window.googletag.pubads().setTargeting('prog_lang', 'c_sharp_lang');
+          break;
+        case url.includes("/dsa"):
+          window.googletag.pubads().setTargeting('prog_lang', 'dsa');
+          break;
+        case url.includes("/java-programming"):
+          window.googletag.pubads().setTargeting('prog_lang', 'java');
+          break;
+        case url.includes("/javascript"):
+          window.googletag.pubads().setTargeting('prog_lang', 'javascript');
+          break;
+        case url.includes("/typescript"):
+          window.googletag.pubads().setTargeting('prog_lang', 'typescript');
+          break;
+        case url.includes("/scala"):
+          window.googletag.pubads().setTargeting('prog_lang', 'scala');
+          break;
+        case url.includes("/dart"):
+          window.googletag.pubads().setTargeting('prog_lang', 'dart');
+          break;
+        case url.includes("/ruby"):
+          window.googletag.pubads().setTargeting('prog_lang', 'ruby');
+          break;
+        case url.includes("/bash"):
+          window.googletag.pubads().setTargeting('prog_lang', 'bash');
+          break;
+        case url.includes("/kotlin-programming"):
+          window.googletag.pubads().setTargeting('prog_lang', 'kotlin');
+          break;
+        case url.includes("/python-programming"):
+          window.googletag.pubads().setTargeting('prog_lang', 'python');
+          break;
+        case url.includes("/swift-programming"):
+          window.googletag.pubads().setTargeting('prog_lang', 'swift');
+          break;
+      }
+    });
+  </script>
+
+  <script src="https://cmp.uniconsent.com/v2/stub.min.js"></script>
+  <script async src='https://cmp.uniconsent.com/v2/a8d3ae4937/cmp.js'></script>
+  <script type="text/javascript">
+    window.googletag = window.googletag || {};
+    window.googletag.cmd = window.googletag.cmd || [];
+    window.googletag.cmd.push(function () {
+      window.googletag.pubads().enableAsyncRendering();
+      window.googletag.pubads().disableInitialLoad();
+    });
+    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;
+  </script>
+  <script>
+    // GA4 initialization
+    (function(w, d){
+      const gaId = 'G-YJM03XN8Q2';
+      w.dataLayer = w.dataLayer || [];
+      function gtag(){ w.dataLayer.push(arguments); }
+      w.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', gaId, {
+        send_page_view: false
+      });
+    })(window, document);
+  </script>
+  <script>
+    __tcfapi("addEventListener", 2, function (tcData, success) {
+      if (success && tcData.unicLoad === true) {
+        if (!window._initAds) {
+          window._initAds = true;
+
+          var pubGalaxy = document.createElement('script');
+          pubGalaxy.async = true;
+          pubGalaxy.src = '//dsh7ky7308k4b.cloudfront.net/publishers/Programizcomnew.min.js';
+          document.head.appendChild(pubGalaxy);
+
+          var btloader = document.createElement('script');
+          btloader.async = true;
+          btloader.src = '//btloader.com/tag?o=5184339635601408&upapi=true';
+          document.head.appendChild(btloader);
+        }
+      }
+    });
+  </script>
+  <!-- CMP and header tag ad code end -->
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TKXT7MH');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Buy sellads CSS-->
+  <style>
+    .pgAdWrapper {
+      min-height: 0 !important;
+    }
+
+    #carbonads {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      --width: 728px;
+      --font-size: 22px
+    }
+
+    #carbonads {
+      display: block;
+      overflow: hidden;
+      max-width: var(--width);
+      position: relative;
+      background-color: #fcfcfc;
+      border: solid 1px #eee;
+      font-size: var(--font-size);
+      box-sizing: border-box;
+      margin: 36px 0 36px 0;
+      max-height: 90px
+    }
+
+    .detail #carbonads {
+      margin-top: 12px
+    }
+
+    #carbonads a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    #carbonads a:hover {
+      color: inherit
+    }
+
+    .carbon-wrap {
+      display: flex;
+      align-items: center
+    }
+
+    carbon-img {
+      display: block;
+      float: left;
+      margin: 0;
+      max-width: var(--width);
+      line-height: 1
+    }
+
+    .carbon-img img {
+      display: block;
+      margin: 0;
+      height: 90px;
+      width: auto
+    }
+
+    .carbon-text {
+      display: block;
+      float: left;
+      padding: 0 1em;
+      line-height: 1.35;
+      max-width: calc(100% - 130px - 2em);
+      text-align: left
+    }
+
+    .carbon-poweredby {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 6px 10px;
+      background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .8);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      font-weight: 601;
+      font-size: 8px;
+      border-top-left-radius: 4px;
+      line-height: 1
+    }
+
+    @media only screen and (min-width:320px) and (max-width:759px) {
+      .carbon-text {
+        font-size: 14px
+      }
+    }
+  </style>
+
+  <!-- Generated using https://dns-prefetch-generator.github.io/ -->
+  <meta http-equiv="x-dns-prefetch-control" content="on" />
+  <link rel="dns-prefetch" href="//www.googletagservices.com" />
+  <link rel="dns-prefetch" href="//www.google-analytics.com" />
+  <link rel="dns-prefetch" href="//c.amazon-adsystem.com" />
+  <link rel="dns-prefetch" href="//dsh7ky7308k4b.cloudfront.net" />
+  <link rel="dns-prefetch" href="//securepubads.g.doubleclick.net" />
+  <link rel="dns-prefetch" href="//adservice.google.com" />
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+  <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.playground-v2.programiz.com/build/styles.da8da818dbf2665eb19d.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+
+<body>
+  <!-- <select id="language-changer"></select> -->
+  <div class="container" id="root" data-lang="java">
+    <div class="spinner">
+      <div class="loader"><span>{</span><span>}</span></div>
+    </div>
+    <div class="mobile-nav-drawer">
+      <div class="nav-backdrop">
+      </div>
+      <div class="nav-menu">
+        <div class="nav-header-wrapper">
+          <div class="nav-logo-title-wrapper">
+            <a href="https://www.programiz.com/" target="_blank" class="nav-logo-link">
+              <img id="nav-logo" src="https://cdn.playground-v2.programiz.com/assets/logos/logo.svg" />
+            </a>
+          </div>
+          <button type="button" class="close-nav-btn" title="Close navigation">
+            <img class="svg" src="https://cdn.playground-v2.programiz.com/assets/icons/close.svg" />
+          </button>
+        </div>
+        <div class="nav-menu-list">
+          <a target="_blank"
+            href="https://www.programiz.com/python-programming/online-compiler/"
+            class="change-lang-row python "
+            title="Online Python Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/python.svg" alt="Python Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online Python Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/r/online-compiler/"
+            class="change-lang-row r " class="change-lang-row r"
+            title="Online R Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/r.svg" alt="R Programming Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online R Compiler
+            </span>
+          </a>
+          <a target="_blank" href="https://www.programiz.com/sql/online-compiler/" class="change-lang-row sql"
+            title="Online SQL Editor">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/sql.svg" alt="SQL Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online SQL Editor
+            </span>
+          </a>
+          <a target="_blank" href="https://www.programiz.com/html/online-compiler/" class="change-lang-row html"
+            title="Online HTML/CSS Editor">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/html.svg" alt="HTML/CSS Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online HTML/CSS Editor
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/java-programming/online-compiler/"
+            class="change-lang-row java active" title="Online Java Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/java.svg" alt="Java Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online Java Compiler
+            </span>
+          </a>
+          <!-- <a target="_blank"
+            href="https://www.programiz.com/kotlin-programming/online-compiler/"
+            class="change-lang-row kotlin "
+            title="Online Kotlin Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="./assets/icons/kotlin.svg" />
+            </span>
+            <span class="nav-menu-text">
+              Online Kotlin Compiler
+            </span>
+          </a> -->
+          <a target="_blank"
+            href="https://www.programiz.com/c-programming/online-compiler/"
+            class="change-lang-row c " title="Online C Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/c.svg" alt="C Programming Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online C Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/cpp-programming/online-compiler/"
+            class="change-lang-row cpp " title="Online C++ Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/cpp.svg" alt="C++ Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online C++ Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/csharp-programming/online-compiler/"
+            class="change-lang-row csharp " title="Online C# Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/csharp.svg" alt="C# Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online C# Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/javascript/online-compiler/"
+            class="change-lang-row javascript "
+            title="Online JavaScript Compiler (Editor)">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/javascript.svg" alt="JavaScript Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online JavaScript Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/typescript/online-compiler/"
+            class="change-lang-row typescript "
+            title="Online Typescript Compiler (Editor)">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg"
+                src="https://cdn.playground-v2.programiz.com/assets/icons/typescript.svg" alt="Typescript Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online Typescript Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/golang/online-compiler/"
+            class="change-lang-row golang "
+            title="Online GoLang Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/golang.svg" alt="Golang Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online GoLang Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/rust/online-compiler/"
+            class="change-lang-row rust " title="Online Rust Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/rust.svg" alt="Rust Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online Rust Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/scala/online-compiler/"
+            class="change-lang-row scala "
+            title="Scala Online Compiler (Editor)">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="./assets/icons/scala.svg" />
+            </span>
+            <span class="nav-menu-text">
+              Scala Online Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/dart/online-compiler/"
+            class="change-lang-row dart "
+            title="Dart Online Compiler (Editor)">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="./assets/icons/dart.svg" />
+            </span>
+            <span class="nav-menu-text">
+              Dart Online Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/ruby/online-compiler/"
+            class="change-lang-row ruby "
+            title="Ruby Online Compiler (Editor)">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="./assets/icons/ruby.svg" />
+            </span>
+            <span class="nav-menu-text">
+              Ruby Online Compiler
+            </span>
+          </a>
+          <!-- <a target="_blank"
+            href="https://www.programiz.com/bash/online-compiler/"
+            class="change-lang-row bash "
+            title="Online bash Compiler (Editor)">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="./assets/icons/bash.svg" alt="bash Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online Bash Interpreter
+            </span>
+          </a> -->
+          <a target="_blank"
+            href="https://www.programiz.com/php/online-compiler/"
+            class="change-lang-row php " title="Online PHP Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/php.svg" alt="PHP Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online PHP Compiler
+            </span>
+          </a>
+          <a target="_blank"
+            href="https://www.programiz.com/swift/online-compiler/"
+            class="change-lang-row swift " title="Online Swift Compiler">
+            <span class="change-lang-btn">
+              <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/swift.svg" alt="Swift Online" />
+            </span>
+            <span class="nav-menu-text">
+              Online Swift Compiler
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Share code -->
+
+    <!-- Progress bar: share link generating modal -->
+    <div class="share-link-generating-modal" style="display: none;">
+      <div class="modal-backdrop-share">
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Generating Link</h2>
+          <h2 class="modal-title modal-title-mob">Generating Link</h2>
+        </div>
+        <div class="modal-body">
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification " id="notification"
+      style="display:none;">
+      <div class="check-icon-wrapper">
+        <img src="https://cdn.playground-v2.programiz.com/assets/icons/check.svg" alt="check">
+      </div>
+
+      <div class="notification-message-wrapper">
+        <p class="notification-message"></p>
+        <button type="button" class="close-modal-notification" title="Close">
+          <img class="svg" src="https://cdn.playground-v2.programiz.com/assets/icons/close-v2-small.svg" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Share link modal -->
+    <div class=" share-link-modal" style="display: none;">
+      <div class="modal-backdrop-share">
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Share your code</h2>
+          <h2 class="modal-title modal-title-mob">Share code</h2>
+          <button type="button" class="close-modal" title="Close">
+            <img class="svg" src="https://cdn.playground-v2.programiz.com/assets/icons/close.svg" />
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="share-code-container">
+            <input type="text" class="share-code-value" value="https://www.programiz.com/online-compiler/XXXXXXXXX"
+              readonly />
+          </div>
+          <button class="share-code-copy-btn" title="Copy Link">Copy Link</button>
+          <button class="share-code-copy-btn code-copied-success" title="Copied to clipboard">
+            <img src="https://cdn.playground-v2.programiz.com/assets/icons/check.svg" alt="success" class="svg">
+            Copied to clipboard
+          </button>
+
+          <!-- Social media share -->
+          <div class="social-wrapper">
+            <span>or share using</span>
+            <div id="social-icons">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Share code end -->
+
+      <!-- Show sale banner if available -->
+      
+<!-- For mobile -->
+<div class="bn-sale-banner bn-sale-banner--mobile d-flex d-xl-none bn-sale-banner--theme-light">
+  
+<a class="bn-sale-banner__link"
+   href="https://programiz.pro/offer/january-2026?utm_source=programiz_compiler&utm_medium=referral&utm_audience=ORGANIC-FREEMIUM&utm_campaign=newyear-26&utm_content=interests_two_months_free&utm_term=sticky_banner_launch"
+   title="Become a PRO"
+   target="_blank"
+   rel="nofollow">
+
+  <div class="bn-sale-banner__wrapper container">
+
+    <!-- Left: Badges and Discount in Column -->
+    <div class="bn-sale-banner__wrapper__left d-none">
+      
+
+      <div class="bn-sale-banner__badge">
+        <div class="bn-sale-banner__badge-row">
+        <div class="bn-sale-banner__capsule">
+          <svg class="bn-sale-banner__ny" width="125" height="83" viewBox="0 0 125 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48.9414 6.87984L65.479 1.79688V12.6551L48.9414 6.87984Z" fill="#6501E5"/>
+            <path d="M13.1136 71.9056L109.985 69.2111L114.282 18.7457L9.47266 14.5918L13.1136 71.9056Z" fill="#6501E5"/>
+            <path d="M96.5379 82.0606H26.3828L21.2422 58.9831L98.8282 57.4297L96.5379 82.0606Z" fill="#FB2F4D"/>
+            <path d="M35.5674 34.2155L33.6012 34.2094L28.6549 27.8934L28.6353 34.194L26.3533 34.1869L26.3849 23.9969L28.3512 24.003L33.2832 30.3046L33.3027 24.0183L35.599 24.0255L35.5674 34.2155ZM37.7201 34.2222L37.7517 24.0321L44.2102 24.0522L44.2034 26.2337L40.0269 26.2207L40.0213 28.0435L43.3366 28.0537L43.3299 30.2353L40.0145 30.225L40.0089 32.0477L44.1854 32.0607L44.1786 34.2422L37.7201 34.2222ZM53.9422 34.2725L51.7905 29.2712L49.6079 34.259L47.4407 34.2523L45.1185 24.055L47.5584 24.0625L48.9305 30.5253L51.8072 23.9035L54.6571 30.5431L56.0692 24.0889L58.5091 24.0965L56.1094 34.2792L53.9422 34.2725ZM65.1435 34.3072L65.1568 30.0159L61.4579 24.1056L64.1131 24.1138L66.2975 27.7948L68.5335 24.1276L71.1887 24.1358L67.4531 30.0374L67.4399 34.3143L65.1435 34.3072ZM72.3531 34.3295L72.3847 24.1395L78.8432 24.1595L78.8364 26.341L74.66 26.3281L74.6543 28.1508L77.9697 28.1611L77.9629 30.3426L74.6475 30.3323L74.6419 32.1551L78.8184 32.168L78.8116 34.3496L72.3531 34.3295ZM79.4616 34.3516L83.8563 24.1751L85.923 24.1815L90.2544 34.385L87.872 34.3776L86.9745 32.222L82.7549 32.2089L81.8441 34.359L79.4616 34.3516ZM83.5935 30.2309L86.1482 30.2388L84.8804 27.1635L83.5935 30.2309ZM91.3165 34.3883L91.3481 24.1983L95.3667 24.2107C97.2899 24.2167 98.5199 25.5983 98.5146 27.2919C98.5106 28.6123 97.8047 29.4569 96.5116 29.9121L100.1 34.4155L97.3588 34.407L93.9847 30.1914L93.6115 30.1902L93.5985 34.3954L91.3165 34.3883ZM93.6175 28.2527L95.0815 28.2572C95.756 28.2593 96.2452 27.8733 96.247 27.2849C96.2489 26.6677 95.7621 26.3074 95.0875 26.3053L93.6236 26.3008L93.6175 28.2527Z" fill="white"/>
+            <path d="M31.3838 51.3229L29.4176 51.3168L24.4713 45.0008L24.4517 51.3014L22.1697 51.2944L22.2013 41.1043L24.1676 41.1104L29.0996 47.412L29.1191 41.1258L31.4154 41.1329L31.3838 51.3229ZM33.5365 51.3296L33.5681 41.1396L40.0266 41.1596L40.0198 43.3411L35.8434 43.3282L35.8377 45.1509L39.1531 45.1612L39.1463 47.3427L35.8309 47.3324L35.8253 49.1551L40.0018 49.1681L39.995 51.3496L33.5365 51.3296ZM49.7586 51.3799L47.6069 46.3786L45.4243 51.3664L43.2571 51.3597L40.9349 41.1624L43.3748 41.17L44.7469 47.6327L47.6236 41.0109L50.4735 47.6505L51.8856 41.1963L54.3255 41.2039L51.9258 51.3866L49.7586 51.3799ZM61.9556 51.5899C59.4297 51.5821 58.0285 49.8411 57.9477 48.1329L60.2297 48.14C60.3706 49.0016 61.0723 49.4774 61.9622 49.4801C62.7228 49.4825 63.2836 49.1541 63.2854 48.5801C63.2869 48.1064 62.9292 47.7322 61.9541 47.4708L60.9646 47.2094C59.3441 46.7738 58.2278 45.737 58.2184 44.1438C58.21 42.2206 59.6202 41.0481 61.73 41.0546C63.9545 41.0615 65.3417 42.6876 65.3942 44.2522L63.1266 44.2452C62.8995 43.4407 62.2688 43.1661 61.7234 43.1644C61.0632 43.1623 60.5313 43.4477 60.5153 43.9931C60.4992 44.5528 60.9574 44.8843 61.7462 45.0877L62.9078 45.3927C64.5713 45.8284 65.6012 46.9224 65.5963 48.5155C65.5909 50.2521 64.1515 51.5967 61.9556 51.5899ZM67.1884 51.4339L67.22 41.2439L69.4877 41.2509L69.4745 45.5135L72.9465 41.2616L75.7452 41.2703L71.7114 46.1519L76.5317 51.4629L73.6039 51.4538L69.4702 46.877L69.4561 51.4409L67.1884 51.4339ZM77.2378 51.4651L77.2693 41.275L79.5513 41.2821L79.5198 51.4721L77.2378 51.4651ZM81.6667 51.4788L81.6983 41.2888L83.9803 41.2958L83.9555 49.3043L88.175 49.3174L88.1683 51.4989L81.6667 51.4788ZM89.5857 51.5033L89.6173 41.3133L91.8993 41.3204L91.8744 49.3289L96.094 49.342L96.0872 51.5235L89.5857 51.5033ZM100.709 51.7101C98.1833 51.7022 96.7822 49.9612 96.7014 48.2531L98.9834 48.2601C99.1242 49.1217 99.826 49.5975 100.716 49.6003C101.476 49.6026 102.037 49.2743 102.039 48.7002C102.041 48.2266 101.683 47.8523 100.708 47.5909L99.7182 47.3295C98.0978 46.8939 96.9815 45.8571 96.9721 44.264C96.9637 42.3407 98.3738 41.1682 100.484 41.1748C102.708 41.1817 104.095 42.8078 104.148 44.3723L101.88 44.3653C101.653 43.5609 101.022 43.2862 100.477 43.2845C99.8169 43.2825 99.285 43.5679 99.2689 44.1132C99.2528 44.6729 99.7111 45.0044 100.5 45.2078L101.661 45.5128C103.325 45.9485 104.355 47.0425 104.35 48.6356C104.345 50.3722 102.905 51.7169 100.709 51.7101Z" fill="white"/>
+            <path d="M114.277 18.7481L48.9414 6.87891L51.9844 16.2794L114.277 18.7481Z" fill="#5700AD"/>
+            <path d="M33.8143 76.3021C31.6771 76.3021 30.3672 74.8267 30.3672 72.8825C30.3672 71.9036 30.7533 71.352 31.5255 70.249L34.2556 66.3606H36.8202L34.421 69.7802C35.7861 69.8767 37.2614 70.9522 37.2614 72.8963C37.2614 74.8267 35.9515 76.3021 33.8143 76.3021ZM33.8143 74.3027C34.6003 74.3027 35.1656 73.6961 35.1656 72.9239C35.1656 72.1656 34.6003 71.5451 33.8143 71.5451C33.0146 71.5451 32.4631 72.1656 32.4631 72.9239C32.4631 73.6961 33.0146 74.3027 33.8143 74.3027ZM45.0831 74.0959V76.1504H38.3268V75.4472C38.3268 73.2273 40.0228 72.3034 41.4568 71.2831C42.2289 70.7316 42.9321 70.1111 42.9321 69.4079C42.9321 68.7736 42.5598 68.2497 41.7739 68.2497C40.9604 68.2497 40.4364 68.8288 40.4502 69.4768H38.3682C38.3682 67.5464 39.8573 66.1952 41.8428 66.1952C43.4974 66.1952 45.0142 67.2293 45.0142 69.2562C45.0142 71.0073 44.1455 71.876 43.0011 72.7171C42.5322 73.0618 41.5257 73.5995 41.2637 74.0959H45.0831ZM48.8356 71.683C47.3326 71.683 46.1193 70.4558 46.1193 68.9666C46.1193 67.4637 47.3326 66.2503 48.8356 66.2503C50.3247 66.2503 51.5519 67.4637 51.5519 68.9666C51.5519 70.4558 50.3247 71.683 48.8356 71.683ZM48.3116 76.1504L54.5164 66.3606H56.6536L50.4488 76.1504H48.3116ZM48.8356 69.9456C49.3733 69.9456 49.787 69.4906 49.787 68.9666C49.787 68.4427 49.3733 67.9877 48.8356 67.9877C48.284 67.9877 47.8704 68.4427 47.8704 68.9666C47.8704 69.4906 48.284 69.9456 48.8356 69.9456ZM56.1296 76.2607C54.6267 76.2607 53.4133 75.0335 53.4133 73.5444C53.4133 72.0415 54.6267 70.8281 56.1296 70.8281C57.6188 70.8281 58.8459 72.0415 58.8459 73.5444C58.8459 75.0335 57.6188 76.2607 56.1296 76.2607ZM56.1296 74.5234C56.6674 74.5234 57.081 74.0683 57.081 73.5444C57.081 73.0204 56.6674 72.5654 56.1296 72.5654C55.5919 72.5654 55.1644 73.0204 55.1644 73.5444C55.1644 74.0683 55.5919 74.5234 56.1296 74.5234ZM67.8521 76.3159C65.0531 76.3159 62.7918 74.0408 62.7918 71.2555C62.7918 68.4703 65.0531 66.1952 67.8521 66.1952C70.6374 66.1952 72.9124 68.4703 72.9124 71.2555C72.9124 74.0408 70.6374 76.3159 67.8521 76.3159ZM67.8521 74.1924C69.4378 74.1924 70.6925 72.8412 70.6925 71.2555C70.6925 69.6699 69.4378 68.3186 67.8521 68.3186C66.2527 68.3186 64.9979 69.6699 64.9979 71.2555C64.9979 72.8412 66.2527 74.1924 67.8521 74.1924ZM74.4252 76.1504V66.3606H80.4507V68.4565H76.6175V70.2214H79.6096V72.3172H76.6175V76.1504H74.4252ZM81.9388 76.1504V66.3606H87.9643V68.4565H84.1311V70.2214H87.1232V72.3172H84.1311V76.1504H81.9388Z" fill="white"/>
+            <path d="M41.4552 6.25469H40.4002V5.1997C40.4002 4.66473 39.9667 4.23047 39.4309 4.23047C38.896 4.23047 38.4617 4.66394 38.4617 5.1997V6.25469H37.4067C36.8718 6.25469 36.4375 6.68895 36.4375 7.22392C36.4375 7.75888 36.871 8.19317 37.4067 8.19317H38.4617V9.24816C38.4617 9.78312 38.8952 10.2174 39.4309 10.2174C39.9659 10.2174 40.4002 9.78391 40.4002 9.24816V8.19317H41.4552C41.9901 8.19317 42.4244 7.75967 42.4244 7.22392C42.4244 6.68895 41.9909 6.25469 41.4552 6.25469Z" fill="white"/>
+            <path d="M115.053 61.3152H113.998V60.2602C113.998 59.7253 113.564 59.291 113.029 59.291C112.494 59.291 112.059 59.7245 112.059 60.2602V61.3152H111.004C110.469 61.3152 110.035 61.7495 110.035 62.2845C110.035 62.8195 110.469 63.2537 111.004 63.2537H112.059V64.3087C112.059 64.8437 112.494 65.2779 113.029 65.2779C113.564 65.2779 113.998 64.8445 113.998 64.3087V63.2537H115.053C115.588 63.2537 116.022 62.8195 116.022 62.2845C116.021 61.7487 115.588 61.3152 115.053 61.3152Z" fill="white"/>
+            <path d="M90.8891 9.95986C91.4513 9.95986 91.9071 9.50407 91.9071 8.94184C91.9071 8.37961 91.4513 7.92383 90.8891 7.92383C90.3269 7.92383 89.8711 8.37961 89.8711 8.94184C89.8711 9.50407 90.3269 9.95986 90.8891 9.95986Z" fill="white"/>
+            <path d="M75.2821 1.01802C75.2821 1.58052 74.8266 2.03603 74.2641 2.03603C73.7016 2.03603 73.2461 1.58052 73.2461 1.01802C73.2461 0.455514 73.7024 1.01577e-06 74.2641 1.01577e-06C74.8258 -0.0007857 75.2821 0.455514 75.2821 1.01802Z" fill="white"/>
+            <path d="M27.2079 11.5668C27.2079 12.1293 26.7524 12.5848 26.1899 12.5848C25.6274 12.5848 25.1719 12.1293 25.1719 11.5668C25.1719 11.0043 25.6274 10.5488 26.1899 10.5488C26.7516 10.548 27.2079 11.0043 27.2079 11.5668Z" fill="white"/>
+            <path d="M5.52819 41.3383C5.52819 41.9008 5.0727 42.3563 4.5102 42.3563C3.9477 42.3563 3.49219 41.9008 3.49219 41.3383C3.49219 40.7758 3.9477 40.3203 4.5102 40.3203C5.0727 40.3203 5.52819 40.7758 5.52819 41.3383Z" fill="white"/>
+            <path d="M17.4813 5.67815C17.4813 6.24065 17.025 6.69616 16.4633 6.69616C15.9008 6.69616 15.4453 6.24065 15.4453 5.67815C15.4453 5.11565 15.9008 4.66016 16.4633 4.66016C17.025 4.66016 17.4813 5.11643 17.4813 5.67815Z" fill="white"/>
+            <path d="M99.186 73.9442C99.7482 73.9442 100.204 73.4884 100.204 72.9262C100.204 72.364 99.7482 71.9082 99.186 71.9082C98.6238 71.9082 98.168 72.364 98.168 72.9262C98.168 73.4884 98.6238 73.9442 99.186 73.9442Z" fill="white"/>
+            <path d="M118.19 48.3426C118.752 48.3426 119.208 47.8869 119.208 47.3246C119.208 46.7624 118.752 46.3066 118.19 46.3066C117.628 46.3066 117.172 46.7624 117.172 47.3246C117.172 47.8869 117.628 48.3426 118.19 48.3426Z" fill="white"/>
+            <path d="M113.03 4.43359C111.894 4.43359 111.06 5.49881 111.333 6.601L113.03 13.4525L114.726 6.601C114.999 5.4996 114.165 4.43359 113.03 4.43359Z" fill="white"/>
+            <path d="M122.516 14.392L115.664 16.0881L122.516 17.7843C123.618 18.0573 124.683 17.2234 124.683 16.0881C124.683 14.9529 123.617 14.119 122.516 14.392Z" fill="white"/>
+            <path d="M113.03 18.7227L111.333 25.5741C111.06 26.6763 111.894 27.7416 113.03 27.7416C114.165 27.7416 114.999 26.6763 114.726 25.5741L113.03 18.7227Z" fill="white"/>
+            <path d="M103.542 14.392C102.44 14.119 101.375 14.9529 101.375 16.0881C101.375 17.2234 102.44 18.0573 103.542 17.7843L110.394 16.0881L103.542 14.392Z" fill="white"/>
+            <path d="M106.955 10.0158C106.425 10.546 106.534 11.4319 107.175 11.8189L111.164 14.2255L108.758 10.2361C108.372 9.5941 107.486 9.48554 106.955 10.0158Z" fill="white"/>
+            <path d="M119.104 10.0158C118.575 9.48554 117.688 9.5941 117.301 10.2361L114.895 14.2255L118.884 11.8189C119.526 11.4319 119.634 10.5452 119.104 10.0158Z" fill="white"/>
+            <path d="M118.884 20.3578L114.895 17.9512L117.301 21.9406C117.688 22.5826 118.575 22.6904 119.104 22.1609C119.634 21.6314 119.526 20.7448 118.884 20.3578Z" fill="white"/>
+            <path d="M106.955 22.1609C107.484 22.6904 108.371 22.5826 108.758 21.9406L111.165 17.9512L107.175 20.3578C106.533 20.7448 106.425 21.6314 106.955 22.1609Z" fill="white"/>
+            <path d="M11.6545 46.3066C10.5193 46.3066 9.68538 47.3718 9.95837 48.474L11.6545 55.3255L13.3507 48.474C13.6237 47.3718 12.7898 46.3066 11.6545 46.3066Z" fill="white"/>
+            <path d="M21.1406 56.2648L14.2891 57.9609L21.1406 59.6571C22.2428 59.9301 23.308 59.0962 23.308 57.9609C23.308 56.8257 22.242 55.9926 21.1406 56.2648Z" fill="white"/>
+            <path d="M11.6545 60.5957L9.95837 67.4472C9.68538 68.5494 10.5193 69.6146 11.6545 69.6146C12.7898 69.6146 13.6237 68.5494 13.3507 67.4472L11.6545 60.5957Z" fill="white"/>
+            <path d="M2.16741 56.265C1.06522 55.992 0 56.8259 0 57.9612C0 59.0964 1.06522 59.9303 2.16741 59.6573L9.01892 57.9612L2.16741 56.265Z" fill="white"/>
+            <path d="M5.58024 51.8869C5.04999 52.4171 5.15856 53.303 5.80052 53.69L9.78994 56.0966L7.38338 52.1072C6.99711 51.4652 6.11048 51.3566 5.58024 51.8869Z" fill="white"/>
+            <path d="M17.7285 51.8869C17.199 51.3566 16.3124 51.4652 15.9253 52.1072L13.5195 56.0966L17.509 53.69C18.1509 53.303 18.2587 52.4163 17.7285 51.8869Z" fill="white"/>
+            <path d="M17.509 62.2308L13.5195 59.8242L15.9253 63.8137C16.3124 64.4556 17.199 64.5634 17.7285 64.0332C18.2587 63.5045 18.1509 62.6179 17.509 62.2308Z" fill="white"/>
+            <path d="M5.57991 64.0332C6.10937 64.5634 6.99599 64.4548 7.38305 63.8137L9.78961 59.8242L5.80019 62.2308C5.15823 62.6171 5.05045 63.5037 5.57991 64.0332Z" fill="white"/>
+          </svg>
+        </div>
+        <span class="sale-burst bn-sale-banner__burst d-none" style="--sale-burst-content-rotation:0deg">
+        <svg class="bn-sale-banner__burst-shape" width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.4451 5.14433C11.697 3.31984 13.7067 2.15946 15.9127 1.98759C16.8663 1.91338 17.9328 2.10985 20.0655 2.50268C20.9144 2.65912 21.3396 2.73707 21.7609 2.76537C22.7271 2.83007 23.6972 2.70285 24.6138 2.39024C25.0134 2.25391 25.4035 2.06816 26.1827 1.69755C28.1415 0.765886 29.1209 0.299703 30.0614 0.12462C32.2364 -0.280294 34.4779 0.320445 36.1591 1.75851C36.8859 2.38047 37.5023 3.27411 38.733 5.06041C39.2225 5.77118 39.4675 6.1268 39.7454 6.44476C40.3827 7.17355 41.1583 7.7687 42.0272 8.1957C42.4062 8.38208 42.8133 8.52677 43.6268 8.8159C45.6709 9.54217 46.6932 9.90533 47.4821 10.4466C49.3064 11.6985 50.4669 13.7083 50.6388 15.9142C50.7131 16.8679 50.5159 17.9344 50.1229 20.0675C49.9665 20.9164 49.8883 21.3416 49.8602 21.7629C49.7955 22.729 49.9235 23.6987 50.2362 24.6152C50.3726 25.0149 50.5581 25.4049 50.9288 26.1842C51.8604 28.1431 52.3257 29.123 52.5009 30.0633C52.9058 32.2384 52.3052 34.4798 50.867 36.1611C50.2451 36.8878 49.3522 37.5038 47.566 38.7345C46.8553 39.2239 46.4996 39.469 46.1816 39.7469C45.4527 40.3843 44.8569 41.1601 44.4299 42.0291C44.2436 42.4081 44.0987 42.8153 43.8097 43.6287C43.0835 45.6725 42.721 46.6947 42.1798 47.4835C40.928 49.3079 38.9181 50.4682 36.7122 50.6403C35.7584 50.7146 34.6915 50.5179 32.5581 50.1248C31.7091 49.9685 31.2841 49.8902 30.8627 49.8621C29.8967 49.7975 28.9275 49.9251 28.0112 50.2376C27.6114 50.374 27.221 50.5598 26.4414 50.9308C24.4827 51.8623 23.5025 52.3276 22.5622 52.5029C20.3872 52.9077 18.1456 52.3072 16.4645 50.869C15.7375 50.2471 15.1225 49.3537 13.8919 47.5675C13.4023 46.8568 13.1567 46.5015 12.8787 46.1836C12.2412 45.4546 11.4655 44.8588 10.5964 44.4318C10.2174 44.2456 9.81016 44.1006 8.99682 43.8116C6.95342 43.0854 5.93162 42.7224 5.14287 42.1813C3.31832 40.9294 2.15803 38.9197 1.98613 36.7137C1.91179 35.7599 2.1078 34.6933 2.50072 32.56C2.65714 31.711 2.73519 31.2861 2.76341 30.8646C2.8281 29.8986 2.70042 28.9295 2.38793 28.0131C2.25162 27.6134 2.06679 27.2231 1.69608 26.4437C0.764374 24.4848 0.297743 23.5046 0.122667 22.5642C-0.282132 20.3892 0.318481 18.1476 1.75656 16.4664C2.37836 15.7395 3.27201 15.1243 5.0581 13.8938C5.76907 13.4041 6.12531 13.1591 6.4433 12.881C7.17217 12.2436 7.76673 11.4674 8.19374 10.5984C8.38005 10.2192 8.52488 9.81226 8.81395 8.99877C9.54026 6.95493 9.90385 5.93313 10.4451 5.14433Z" fill="#F44336"/>
+        </svg>
+        <svg class="bn-sale-banner__christmas--xmas" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.47784 12.8958C9.34712 12.8208 9.29871 12.6562 9.36649 12.5231L9.94501 11.4023L11.1214 11.4387C11.2763 11.4435 11.3998 11.5742 11.3949 11.7291C11.3901 11.884 11.2594 12.0075 11.1045 12.0026L10.2839 11.9784L9.86997 12.7845C9.79978 12.9225 9.62791 12.9781 9.48994 12.9055C9.4851 12.9007 9.47784 12.8958 9.47784 12.8958Z" fill="white"/>
+          <path d="M13.576 7.57751C13.5349 7.5533 13.4986 7.51941 13.4744 7.47584L12.8789 6.46161L13.5857 5.41834C13.6729 5.29005 13.8471 5.25616 13.9754 5.3433C14.1037 5.43044 14.1376 5.60473 14.0505 5.73302L13.5421 6.4834L13.9561 7.19263C14.0335 7.32577 13.99 7.50005 13.8544 7.57751C13.7697 7.63076 13.6608 7.62834 13.576 7.57751Z" fill="white"/>
+          <path d="M3.46588 13.0144C3.33032 12.9369 3.28433 12.765 3.36179 12.6295L10.5146 0.141659C10.5921 0.00610617 10.764 -0.0398879 10.8995 0.037571C11.0351 0.11503 11.0811 0.286893 11.0036 0.422446L3.85075 12.9103C3.77329 13.0458 3.60143 13.0918 3.46588 13.0144Z" fill="white"/>
+          <path d="M0.142849 6.82462C0.0581286 6.77621 0.00245493 6.68665 3.43375e-05 6.58256C-0.00238626 6.42764 0.123485 6.29935 0.278403 6.29935L13.9136 6.18558C14.0685 6.18316 14.1968 6.30903 14.1968 6.46395C14.1992 6.61887 14.0734 6.74716 13.9184 6.74716L0.285664 6.86093C0.234832 6.86093 0.183999 6.84882 0.142849 6.82462Z" fill="white"/>
+          <path d="M10.4563 12.7637C10.4152 12.7395 10.3789 12.7056 10.3522 12.6621L3.49469 0.876192C3.41723 0.740639 3.46322 0.568776 3.59635 0.491317C3.73191 0.413858 3.90377 0.457428 3.98123 0.592981L10.8388 12.3788C10.9162 12.5144 10.8702 12.6863 10.7371 12.7637C10.6475 12.8146 10.541 12.8121 10.4563 12.7637Z" fill="white"/>
+          <path d="M10.0177 1.56802L9.42709 0.454545C9.35447 0.316571 9.40772 0.144707 9.54327 0.0720891C9.68125 -0.000528704 9.85069 0.0503046 9.92331 0.188278L10.3493 0.989493L11.1699 0.955605C11.3248 0.948343 11.4555 1.06937 11.4628 1.22429C11.4701 1.37921 11.349 1.50992 11.1941 1.51718L10.0177 1.56802Z" fill="white"/>
+          <path d="M2.95539 1.61927C2.86825 1.56844 2.81015 1.47404 2.81257 1.36753C2.81499 1.21261 2.94571 1.08916 3.10062 1.09159L4.00593 1.11337L4.37628 0.382349C4.44647 0.244375 4.61591 0.1887 4.75389 0.258897C4.89186 0.329094 4.94754 0.498536 4.87734 0.63651L4.34723 1.68463L3.0861 1.65558C3.04011 1.65316 2.99654 1.64106 2.95539 1.61927Z" fill="white"/>
+          <path d="M0.595907 7.71284C0.588645 7.71042 0.583804 7.70558 0.576542 7.70074C0.448251 7.6136 0.414363 7.43932 0.501504 7.31103L1.00983 6.56064L0.595907 5.85383C0.518448 5.71828 0.562018 5.54641 0.697572 5.46896C0.830704 5.38908 1.00499 5.43507 1.08245 5.57062L1.67791 6.58485L0.968678 7.6257C0.886378 7.74916 0.721777 7.78546 0.595907 7.71284Z" fill="white"/>
+          <path d="M2.99617 11.9809C2.91629 11.9349 2.8582 11.8477 2.85578 11.7485C2.84852 11.5936 2.96955 11.4629 3.12447 11.4556L4.38559 11.4023L4.93749 12.4408C5.01011 12.5788 4.95927 12.7482 4.8213 12.8208C4.68333 12.8934 4.51389 12.8426 4.44127 12.7046L4.05639 11.9784L3.15109 12.0172C3.093 12.0196 3.03974 12.0051 2.99617 11.9809Z" fill="white"/>
+          <path d="M6.95922 11.8484C6.87208 11.8 6.81641 11.7056 6.81641 11.5991L6.95922 1.53423C6.96164 1.37931 7.08993 1.25586 7.24485 1.25586C7.39977 1.25828 7.52564 1.38657 7.52322 1.54149L7.3804 11.6063C7.37798 11.7612 7.24969 11.8871 7.09477 11.8847C7.04636 11.8847 7.00037 11.8702 6.95922 11.8484Z" fill="white"/>
+          <path d="M11.0031 9.15075C11.0031 9.14833 11.0031 9.14833 11.0031 9.15075L2.76095 4.36282C2.6254 4.28537 2.58183 4.1135 2.65929 3.97795C2.73674 3.84482 2.90861 3.79883 3.04174 3.87387C3.04174 3.87387 3.04174 3.87387 3.04416 3.87387L11.2863 8.65938C11.4218 8.73683 11.4654 8.9087 11.3879 9.04425C11.3105 9.1798 11.1386 9.22579 11.0031 9.15075Z" fill="white"/>
+          <path d="M2.32562 4.69964C2.28205 4.67544 2.24332 4.63671 2.21669 4.5883C2.14407 4.45274 2.19491 4.28088 2.33046 4.20826L2.72986 3.99283L2.71049 3.58859C2.70323 3.43367 2.82184 3.30054 2.97918 3.29328C3.1341 3.28602 3.26723 3.40705 3.27449 3.56197L3.3108 4.31961L2.59915 4.70206C2.50958 4.75047 2.40792 4.74563 2.32562 4.69964Z" fill="white"/>
+          <path d="M2.84906 5.23107C2.80549 5.20687 2.76676 5.16814 2.74013 5.11973C2.66751 4.98175 2.71834 4.81231 2.8539 4.7397L3.42032 4.4347L3.39611 3.85617C3.38885 3.70126 3.50746 3.56812 3.6648 3.56086C3.81971 3.5536 3.95285 3.67221 3.96011 3.82955L4.00368 4.76148L3.125 5.23349C3.03544 5.2819 2.93136 5.27706 2.84906 5.23107Z" fill="white"/>
+          <path d="M3.44671 5.6713C3.40314 5.6471 3.36441 5.60836 3.33779 5.55995C3.26517 5.42198 3.316 5.25254 3.45155 5.17992L4.21646 4.77084L4.18015 3.98899C4.17289 3.83407 4.2915 3.70094 4.44884 3.69368C4.60375 3.68641 4.73689 3.80502 4.74415 3.95994L4.7974 5.0952L3.72266 5.6713C3.6331 5.72456 3.52901 5.71729 3.44671 5.6713Z" fill="white"/>
+          <path d="M11.0361 9.68636C10.9562 9.64036 10.9005 9.55565 10.8957 9.4564L10.8594 8.69876L11.571 8.3163C11.709 8.24368 11.8784 8.29452 11.9511 8.43007C12.0237 8.56804 11.9728 8.73748 11.8373 8.81252L11.4379 9.02796L11.4573 9.42978C11.4645 9.58469 11.3459 9.71783 11.1886 9.72509C11.1353 9.72751 11.0821 9.71298 11.0361 9.68636Z" fill="white"/>
+          <path d="M10.3558 9.42872C10.276 9.38273 10.2203 9.298 10.2154 9.19876L10.1719 8.26684L11.0505 7.79482C11.1885 7.7222 11.358 7.77303 11.4306 7.90859C11.5032 8.04414 11.4524 8.216 11.3168 8.28862L10.7504 8.59361L10.777 9.17213C10.7843 9.32705 10.6657 9.46018 10.5083 9.46745C10.4551 9.46745 10.4018 9.45535 10.3558 9.42872Z" fill="white"/>
+          <path d="M9.57255 9.29473C9.49267 9.24874 9.437 9.16401 9.43216 9.06477L9.37891 7.92951L10.4536 7.35341C10.5916 7.28079 10.7611 7.33162 10.8337 7.46718C10.9063 7.60273 10.8555 7.77459 10.7199 7.84721L9.95501 8.25629L9.99132 9.03814C9.99858 9.19306 9.87997 9.32619 9.72263 9.33345C9.66938 9.33345 9.61612 9.32135 9.57255 9.29473Z" fill="white"/>
+          <path d="M2.794 9.22066C2.75285 9.19646 2.71654 9.16257 2.68992 9.11658C2.61246 8.98103 2.65845 8.80916 2.794 8.7317L11.0168 3.9946C11.1523 3.91714 11.3242 3.96314 11.4016 4.09869C11.4791 4.23424 11.4331 4.40611 11.2975 4.48357L3.07479 9.22066C2.98523 9.2715 2.87872 9.26907 2.794 9.22066Z" fill="white"/>
+          <path d="M11.4411 4.86098L11.4387 4.85856L10.7852 4.47368L10.8554 3.66762C10.8699 3.51271 11.0054 3.39894 11.1603 3.41104C11.3153 3.42314 11.429 3.56112 11.4169 3.71604L11.3782 4.16626L11.7268 4.37202C11.8599 4.44948 11.9059 4.62375 11.826 4.75689C11.7461 4.89244 11.5767 4.93601 11.4411 4.86098Z" fill="white"/>
+          <path d="M10.8554 5.28731L10.8529 5.28489L10.0469 4.81288L10.134 3.81801C10.1485 3.66309 10.2841 3.54933 10.439 3.56143C10.5939 3.57595 10.7077 3.7115 10.6956 3.86642L10.6399 4.50788L11.1386 4.80077C11.2717 4.88065 11.3177 5.05251 11.2378 5.18565C11.1579 5.31878 10.9885 5.36477 10.8554 5.28731Z" fill="white"/>
+          <path d="M10.3109 5.87729L10.3085 5.87487L9.32812 5.29877L9.43463 4.08363C9.44915 3.92872 9.58471 3.81495 9.73963 3.82705C9.89454 3.84158 10.0083 3.97713 9.99621 4.13205L9.92117 4.99378L10.5941 5.39076C10.7272 5.47064 10.7732 5.64249 10.6933 5.77563C10.6159 5.90876 10.444 5.95475 10.3109 5.87729Z" fill="white"/>
+          <path d="M2.79463 9.77801C2.70265 9.72476 2.64456 9.62067 2.65424 9.5069L2.69781 9.05668L2.35166 8.8485C2.21853 8.76862 2.17496 8.59676 2.25484 8.46121C2.33472 8.3305 2.50416 8.2845 2.63729 8.36196L2.64214 8.36438L3.29327 8.7541L3.21824 9.55774C3.20371 9.71265 3.06574 9.82642 2.91082 9.8119C2.86725 9.80948 2.82852 9.79737 2.79463 9.77801Z" fill="white"/>
+          <path d="M3.51761 9.64239C3.42563 9.58913 3.36753 9.48505 3.37721 9.37128L3.43773 8.73224L2.94151 8.43451C2.80838 8.35463 2.7648 8.18277 2.84468 8.04963C2.92456 7.9165 3.09401 7.87293 3.22714 7.95039L3.23198 7.95281L4.0332 8.43209L3.93879 9.42695C3.92427 9.58187 3.78629 9.69564 3.63138 9.68111C3.59023 9.67385 3.5515 9.66175 3.51761 9.64239Z" fill="white"/>
+          <path d="M4.2194 9.37532C4.12742 9.32207 4.06932 9.21798 4.07901 9.10421L4.16131 8.24248L3.48838 7.84308C3.35525 7.7632 3.31168 7.59134 3.39156 7.45821C3.47144 7.32508 3.64572 7.27908 3.77643 7.36138L4.75193 7.94475L4.63816 9.15747C4.62364 9.31238 4.48567 9.42615 4.33075 9.41163C4.29202 9.40679 4.25329 9.39468 4.2194 9.37532Z" fill="white"/>
+          <path d="M7.24374 1.97542L6.57323 1.52519C6.44494 1.43805 6.41105 1.26377 6.49577 1.13548C6.58533 1.00477 6.75962 0.970875 6.88791 1.05802L7.2631 1.30976L7.61167 1.10401C7.7448 1.02413 7.91908 1.07012 7.99654 1.20325C8.07642 1.33639 8.03043 1.51067 7.8973 1.58813L7.24374 1.97542Z" fill="white"/>
+          <path d="M7.19014 2.7808L6.36229 2.22407C6.234 2.13693 6.20011 1.96265 6.28484 1.83435C6.37198 1.70606 6.54626 1.67217 6.67455 1.75932L7.20708 2.11756L7.70572 1.82225C7.83886 1.74237 8.01314 1.78836 8.0906 1.92149C8.17048 2.05463 8.12449 2.22891 7.99135 2.30637L7.19014 2.7808Z" fill="white"/>
+          <path d="M7.25691 3.6391L6.24511 2.9565C6.11682 2.86935 6.08293 2.69507 6.16765 2.56678C6.25479 2.43849 6.42907 2.4046 6.55736 2.49174L7.27386 2.97344L7.94678 2.57646C8.07992 2.49658 8.2542 2.54257 8.33166 2.6757C8.41154 2.80884 8.36555 2.98312 8.23241 3.06058L7.25691 3.6391Z" fill="white"/>
+          <path d="M6.48868 12.1058C6.44753 12.0816 6.41122 12.0477 6.38701 12.0041C6.30713 11.871 6.35313 11.6967 6.48626 11.6193L7.13982 11.2344L7.81032 11.6846C7.93861 11.7717 7.9725 11.946 7.88778 12.0743C7.80064 12.2026 7.62636 12.2365 7.49807 12.1518L7.12045 11.9L6.77189 12.1058C6.68233 12.159 6.5734 12.1542 6.48868 12.1058Z" fill="white"/>
+          <path d="M6.39547 11.3789C6.35432 11.3547 6.31801 11.3209 6.29381 11.2773C6.21393 11.1417 6.2575 10.9699 6.39305 10.8924L7.19669 10.418L8.02453 10.9747C8.15282 11.0618 8.18671 11.2361 8.10199 11.3644C8.01485 11.4927 7.84057 11.5266 7.71228 11.4395L7.17975 11.0812L6.67868 11.3765C6.5867 11.4298 6.4802 11.4274 6.39547 11.3789Z" fill="white"/>
+          <path d="M6.14883 10.6139C6.10768 10.5897 6.07138 10.5558 6.04717 10.5122C5.96729 10.3791 6.01328 10.2048 6.14641 10.1273L7.12675 9.54883L8.13856 10.229C8.26685 10.3162 8.30074 10.4904 8.21602 10.6187C8.12888 10.747 7.9546 10.7809 7.8263 10.6938L7.10981 10.2121L6.43688 10.609C6.34248 10.6671 6.23356 10.6623 6.14883 10.6139Z" fill="white"/>
+          <path d="M8.3126 7.21427C7.94951 7.84604 7.14346 8.06632 6.51168 7.70323C5.87991 7.34014 5.65963 6.53408 6.02272 5.90231C6.38581 5.27053 7.19187 5.05026 7.82364 5.41334C8.45784 5.77643 8.67569 6.58249 8.3126 7.21427Z" fill="white"/>
+        </svg>
+        <svg class="bn-sale-banner__christmas-hat" width="103" height="71" viewBox="0 0 103 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M65.4902 0.97242C39.8413 -3.80359 18.8357 15.3447 11.5391 25.5158L72.5658 52.7122C75.0423 50.5895 75.6614 44.0152 75.6614 40.9933C82.9138 43.8235 86.938 49.9852 88.0436 52.7122C89.6356 50.7664 92.3921 50.28 93.5714 50.28C94.8981 35.8341 91.1392 5.74843 65.4902 0.97242Z" fill="#FD253E" stroke="#FD253E" stroke-width="0.442223"/>
+          <circle cx="93.5992" cy="56.8257" r="9.28668" fill="white"/>
+          <path d="M84.3877 55.6562C86.5307 60.2939 93.0484 66.8783 102.664 57.2627L102.86 57.4756C102.526 62.3007 98.5087 66.1113 93.5986 66.1113C88.4701 66.1111 84.3127 61.9537 84.3125 56.8252C84.3125 56.4293 84.3396 56.0391 84.3877 55.6562Z" fill="#CDE3F8"/>
+          <path d="M2.03046 36.1293C-0.622876 38.7827 0.335274 41.6571 1.14602 42.7627C37.8504 50.2811 61.7306 69.0743 65.7106 69.9588C69.6906 70.8432 71.9017 66.8632 71.6806 64.431C71.5037 62.4852 72.1966 61.2617 72.5651 60.8932C76.2797 58.063 76.2336 55.809 75.2184 54.9232C52.6651 35.2443 12.423 25.7363 10.2117 25.0738C8.22165 24.4775 6.67387 25.2948 5.3472 27.2849C4.21644 28.9811 5.34713 32.8127 2.03046 36.1293Z" fill="#FEFEFE" stroke="#FEFEFE" stroke-width="0.442223"/>
+          <path d="M48.3239 44.179C45.1679 35.6125 38.1795 34.2224 34.2344 32.3438C35.1361 32.3438 42.6881 35.7252 45.506 36.8524C47.7604 39.5576 47.3846 40.9853 48.3239 44.179Z" fill="#CDE3F8"/>
+          <path d="M9.43688 34.5802C4.92822 30.0716 7.74596 25.589 10.5639 25.0204C8.87312 24.4545 6.84446 24.7739 5.49186 26.1265C3.80111 27.8172 4.92822 32.8895 2.11031 35.7074C-0.144022 37.9617 -0.707759 40.2176 0.983142 43.034L11.1275 45.2899C2.67377 39.092 5.30398 35.3317 9.43688 34.5802Z" fill="#CDE3F8"/>
+          <path d="M49.4515 52.069C45.8446 54.7742 29.5382 50.9418 21.8359 48.6875C22.3995 48.8508 63.541 70.6672 66.359 70.6672C69.3939 70.6672 71.9948 68.4529 71.9948 64.4678C71.9948 61.0863 76.5034 58.2684 76.5034 56.0141C76.5034 54.3233 71.9948 52.069 71.4312 51.5054C72.5584 53.1962 74.1364 56.8031 73.6855 57.7048C73.1219 58.832 70.304 59.3956 68.6133 65.0314C67.2607 69.5401 52.6451 61.2742 45.5064 56.5777C47.7607 56.5777 49.0758 53.5719 49.4515 52.069Z" fill="#CDE3F8"/>
+        </svg>
+        <span class="sale-burst__content bn-sale-banner__burst-content">
+        <div class="bn-sale-banner__burst-value">62</div>
+        <div class="bn-sale-banner__burst-meta"><span class="bn-sale-banner__burst-percent">%</span><span class="bn-sale-banner__burst-off">OFF</span></div></span></span></div>
+
+      </div>
+      <div class="bn-sale-banner__timer" style="display:none;">
+        <span class="bn-sale-banner__timer-value" data-sale-end="2026-01-15T06:00:00+00:00"></span>
+      </div>
+    </div>
+
+    <!-- Center: Content and Actions -->
+    <div class="bn-sale-banner__wrapper__center">
+      <div class="bn-sale-banner__content-wrapper is-desktop">
+        <div class="bn-sale-banner__title"><p>Stop copy pasting code you don't actually understand</p></div>
+        <div class="bn-sale-banner__message">Build the coding confidence you need to become a developer companies will fight for</div>
+      </div>
+
+      <div class="bn-sale-banner__content-wrapper is-mobile">
+        <div class="bn-sale-banner__title"><p>Stop copy pasting code you don't actually understand</p></div>
+      </div>
+
+      <div class="bn-sale-banner__wrapper__right">
+        <span class="bn-sale-banner__cta">Become a PRO</span>
+      </div>
+    </div>
+
+    <!-- Right: CTA -->
+    <div class="bn-sale-banner__wrapper__right">
+      <span class="bn-sale-banner__cta">Become a PRO</span>
+    </div>
+
+    <div class="bn-sale-banner__bg-image">
+      <svg width="188" height="96" viewBox="0 0 188 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_6015_17150)">
+        <path d="M149.016 -17.5312C-19.2698 -12.2221 64.1774 327.089 -98.6797 327.089" stroke="white" stroke-width="1.0018"/>
+        <path d="M160.539 -9.76758C-1.50266 -4.75857 67.1208 335.854 -99.9297 335.854" stroke="white" stroke-width="1.0018"/>
+        <path d="M181.828 -8.26562C8.76658 9.26591 70.7692 335.603 -85.1523 335.603" stroke="white" stroke-width="1.0018"/>
+        <path d="M200.864 -2.75391C11.7738 20.0371 79.3954 338.61 -79.6406 339.862" stroke="white" stroke-width="1.0018"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_6015_17150">
+        <rect width="187.337" height="278" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="bn-sale-banner__bg-image--mobile">
+      <svg width="122" height="100" viewBox="0 0 122 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_6111_17125)">
+        <path d="M97.0233 -11.4141C-12.5439 -7.95738 41.7867 212.961 -64.2461 212.961" stroke="white" stroke-width="0.652252"/>
+        <path d="M104.523 -6.35938C-0.978716 -3.09811 43.7006 218.668 -65.0625 218.668" stroke="white" stroke-width="0.652252"/>
+        <path d="M118.384 -5.38086C5.70725 6.03356 46.0758 218.505 -55.4414 218.505" stroke="white" stroke-width="0.652252"/>
+        <path d="M130.775 -1.79297C7.66256 13.0458 51.6896 220.462 -51.8555 221.277" stroke="white" stroke-width="0.652252"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_6111_17125">
+        <rect width="121.971" height="181" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</a>
+</div>
+
+<!-- For Desktop -->
+<div class="bn-sale-banner bn-sale-banner--desktop d-none d-xl-flex bn-sale-banner--theme-light" style="text-align: center;">
+  
+<a class="bn-sale-banner__link"
+   href="https://programiz.pro/offer/january-2026?utm_source=programiz_compiler&utm_medium=referral&utm_audience=ORGANIC-FREEMIUM&utm_campaign=newyear-26&utm_content=interests_two_months_free&utm_term=sticky_banner_launch"
+   title="Become a PRO"
+   target="_blank"
+   rel="nofollow">
+
+  <div class="bn-sale-banner__wrapper container">
+
+    <!-- Left: Badges and Discount in Column -->
+    <div class="bn-sale-banner__wrapper__left d-none">
+      
+
+      <div class="bn-sale-banner__badge">
+        <div class="bn-sale-banner__badge-row">
+        <div class="bn-sale-banner__capsule">
+          <svg class="bn-sale-banner__ny" width="125" height="83" viewBox="0 0 125 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48.9414 6.87984L65.479 1.79688V12.6551L48.9414 6.87984Z" fill="#6501E5"/>
+            <path d="M13.1136 71.9056L109.985 69.2111L114.282 18.7457L9.47266 14.5918L13.1136 71.9056Z" fill="#6501E5"/>
+            <path d="M96.5379 82.0606H26.3828L21.2422 58.9831L98.8282 57.4297L96.5379 82.0606Z" fill="#FB2F4D"/>
+            <path d="M35.5674 34.2155L33.6012 34.2094L28.6549 27.8934L28.6353 34.194L26.3533 34.1869L26.3849 23.9969L28.3512 24.003L33.2832 30.3046L33.3027 24.0183L35.599 24.0255L35.5674 34.2155ZM37.7201 34.2222L37.7517 24.0321L44.2102 24.0522L44.2034 26.2337L40.0269 26.2207L40.0213 28.0435L43.3366 28.0537L43.3299 30.2353L40.0145 30.225L40.0089 32.0477L44.1854 32.0607L44.1786 34.2422L37.7201 34.2222ZM53.9422 34.2725L51.7905 29.2712L49.6079 34.259L47.4407 34.2523L45.1185 24.055L47.5584 24.0625L48.9305 30.5253L51.8072 23.9035L54.6571 30.5431L56.0692 24.0889L58.5091 24.0965L56.1094 34.2792L53.9422 34.2725ZM65.1435 34.3072L65.1568 30.0159L61.4579 24.1056L64.1131 24.1138L66.2975 27.7948L68.5335 24.1276L71.1887 24.1358L67.4531 30.0374L67.4399 34.3143L65.1435 34.3072ZM72.3531 34.3295L72.3847 24.1395L78.8432 24.1595L78.8364 26.341L74.66 26.3281L74.6543 28.1508L77.9697 28.1611L77.9629 30.3426L74.6475 30.3323L74.6419 32.1551L78.8184 32.168L78.8116 34.3496L72.3531 34.3295ZM79.4616 34.3516L83.8563 24.1751L85.923 24.1815L90.2544 34.385L87.872 34.3776L86.9745 32.222L82.7549 32.2089L81.8441 34.359L79.4616 34.3516ZM83.5935 30.2309L86.1482 30.2388L84.8804 27.1635L83.5935 30.2309ZM91.3165 34.3883L91.3481 24.1983L95.3667 24.2107C97.2899 24.2167 98.5199 25.5983 98.5146 27.2919C98.5106 28.6123 97.8047 29.4569 96.5116 29.9121L100.1 34.4155L97.3588 34.407L93.9847 30.1914L93.6115 30.1902L93.5985 34.3954L91.3165 34.3883ZM93.6175 28.2527L95.0815 28.2572C95.756 28.2593 96.2452 27.8733 96.247 27.2849C96.2489 26.6677 95.7621 26.3074 95.0875 26.3053L93.6236 26.3008L93.6175 28.2527Z" fill="white"/>
+            <path d="M31.3838 51.3229L29.4176 51.3168L24.4713 45.0008L24.4517 51.3014L22.1697 51.2944L22.2013 41.1043L24.1676 41.1104L29.0996 47.412L29.1191 41.1258L31.4154 41.1329L31.3838 51.3229ZM33.5365 51.3296L33.5681 41.1396L40.0266 41.1596L40.0198 43.3411L35.8434 43.3282L35.8377 45.1509L39.1531 45.1612L39.1463 47.3427L35.8309 47.3324L35.8253 49.1551L40.0018 49.1681L39.995 51.3496L33.5365 51.3296ZM49.7586 51.3799L47.6069 46.3786L45.4243 51.3664L43.2571 51.3597L40.9349 41.1624L43.3748 41.17L44.7469 47.6327L47.6236 41.0109L50.4735 47.6505L51.8856 41.1963L54.3255 41.2039L51.9258 51.3866L49.7586 51.3799ZM61.9556 51.5899C59.4297 51.5821 58.0285 49.8411 57.9477 48.1329L60.2297 48.14C60.3706 49.0016 61.0723 49.4774 61.9622 49.4801C62.7228 49.4825 63.2836 49.1541 63.2854 48.5801C63.2869 48.1064 62.9292 47.7322 61.9541 47.4708L60.9646 47.2094C59.3441 46.7738 58.2278 45.737 58.2184 44.1438C58.21 42.2206 59.6202 41.0481 61.73 41.0546C63.9545 41.0615 65.3417 42.6876 65.3942 44.2522L63.1266 44.2452C62.8995 43.4407 62.2688 43.1661 61.7234 43.1644C61.0632 43.1623 60.5313 43.4477 60.5153 43.9931C60.4992 44.5528 60.9574 44.8843 61.7462 45.0877L62.9078 45.3927C64.5713 45.8284 65.6012 46.9224 65.5963 48.5155C65.5909 50.2521 64.1515 51.5967 61.9556 51.5899ZM67.1884 51.4339L67.22 41.2439L69.4877 41.2509L69.4745 45.5135L72.9465 41.2616L75.7452 41.2703L71.7114 46.1519L76.5317 51.4629L73.6039 51.4538L69.4702 46.877L69.4561 51.4409L67.1884 51.4339ZM77.2378 51.4651L77.2693 41.275L79.5513 41.2821L79.5198 51.4721L77.2378 51.4651ZM81.6667 51.4788L81.6983 41.2888L83.9803 41.2958L83.9555 49.3043L88.175 49.3174L88.1683 51.4989L81.6667 51.4788ZM89.5857 51.5033L89.6173 41.3133L91.8993 41.3204L91.8744 49.3289L96.094 49.342L96.0872 51.5235L89.5857 51.5033ZM100.709 51.7101C98.1833 51.7022 96.7822 49.9612 96.7014 48.2531L98.9834 48.2601C99.1242 49.1217 99.826 49.5975 100.716 49.6003C101.476 49.6026 102.037 49.2743 102.039 48.7002C102.041 48.2266 101.683 47.8523 100.708 47.5909L99.7182 47.3295C98.0978 46.8939 96.9815 45.8571 96.9721 44.264C96.9637 42.3407 98.3738 41.1682 100.484 41.1748C102.708 41.1817 104.095 42.8078 104.148 44.3723L101.88 44.3653C101.653 43.5609 101.022 43.2862 100.477 43.2845C99.8169 43.2825 99.285 43.5679 99.2689 44.1132C99.2528 44.6729 99.7111 45.0044 100.5 45.2078L101.661 45.5128C103.325 45.9485 104.355 47.0425 104.35 48.6356C104.345 50.3722 102.905 51.7169 100.709 51.7101Z" fill="white"/>
+            <path d="M114.277 18.7481L48.9414 6.87891L51.9844 16.2794L114.277 18.7481Z" fill="#5700AD"/>
+            <path d="M33.8143 76.3021C31.6771 76.3021 30.3672 74.8267 30.3672 72.8825C30.3672 71.9036 30.7533 71.352 31.5255 70.249L34.2556 66.3606H36.8202L34.421 69.7802C35.7861 69.8767 37.2614 70.9522 37.2614 72.8963C37.2614 74.8267 35.9515 76.3021 33.8143 76.3021ZM33.8143 74.3027C34.6003 74.3027 35.1656 73.6961 35.1656 72.9239C35.1656 72.1656 34.6003 71.5451 33.8143 71.5451C33.0146 71.5451 32.4631 72.1656 32.4631 72.9239C32.4631 73.6961 33.0146 74.3027 33.8143 74.3027ZM45.0831 74.0959V76.1504H38.3268V75.4472C38.3268 73.2273 40.0228 72.3034 41.4568 71.2831C42.2289 70.7316 42.9321 70.1111 42.9321 69.4079C42.9321 68.7736 42.5598 68.2497 41.7739 68.2497C40.9604 68.2497 40.4364 68.8288 40.4502 69.4768H38.3682C38.3682 67.5464 39.8573 66.1952 41.8428 66.1952C43.4974 66.1952 45.0142 67.2293 45.0142 69.2562C45.0142 71.0073 44.1455 71.876 43.0011 72.7171C42.5322 73.0618 41.5257 73.5995 41.2637 74.0959H45.0831ZM48.8356 71.683C47.3326 71.683 46.1193 70.4558 46.1193 68.9666C46.1193 67.4637 47.3326 66.2503 48.8356 66.2503C50.3247 66.2503 51.5519 67.4637 51.5519 68.9666C51.5519 70.4558 50.3247 71.683 48.8356 71.683ZM48.3116 76.1504L54.5164 66.3606H56.6536L50.4488 76.1504H48.3116ZM48.8356 69.9456C49.3733 69.9456 49.787 69.4906 49.787 68.9666C49.787 68.4427 49.3733 67.9877 48.8356 67.9877C48.284 67.9877 47.8704 68.4427 47.8704 68.9666C47.8704 69.4906 48.284 69.9456 48.8356 69.9456ZM56.1296 76.2607C54.6267 76.2607 53.4133 75.0335 53.4133 73.5444C53.4133 72.0415 54.6267 70.8281 56.1296 70.8281C57.6188 70.8281 58.8459 72.0415 58.8459 73.5444C58.8459 75.0335 57.6188 76.2607 56.1296 76.2607ZM56.1296 74.5234C56.6674 74.5234 57.081 74.0683 57.081 73.5444C57.081 73.0204 56.6674 72.5654 56.1296 72.5654C55.5919 72.5654 55.1644 73.0204 55.1644 73.5444C55.1644 74.0683 55.5919 74.5234 56.1296 74.5234ZM67.8521 76.3159C65.0531 76.3159 62.7918 74.0408 62.7918 71.2555C62.7918 68.4703 65.0531 66.1952 67.8521 66.1952C70.6374 66.1952 72.9124 68.4703 72.9124 71.2555C72.9124 74.0408 70.6374 76.3159 67.8521 76.3159ZM67.8521 74.1924C69.4378 74.1924 70.6925 72.8412 70.6925 71.2555C70.6925 69.6699 69.4378 68.3186 67.8521 68.3186C66.2527 68.3186 64.9979 69.6699 64.9979 71.2555C64.9979 72.8412 66.2527 74.1924 67.8521 74.1924ZM74.4252 76.1504V66.3606H80.4507V68.4565H76.6175V70.2214H79.6096V72.3172H76.6175V76.1504H74.4252ZM81.9388 76.1504V66.3606H87.9643V68.4565H84.1311V70.2214H87.1232V72.3172H84.1311V76.1504H81.9388Z" fill="white"/>
+            <path d="M41.4552 6.25469H40.4002V5.1997C40.4002 4.66473 39.9667 4.23047 39.4309 4.23047C38.896 4.23047 38.4617 4.66394 38.4617 5.1997V6.25469H37.4067C36.8718 6.25469 36.4375 6.68895 36.4375 7.22392C36.4375 7.75888 36.871 8.19317 37.4067 8.19317H38.4617V9.24816C38.4617 9.78312 38.8952 10.2174 39.4309 10.2174C39.9659 10.2174 40.4002 9.78391 40.4002 9.24816V8.19317H41.4552C41.9901 8.19317 42.4244 7.75967 42.4244 7.22392C42.4244 6.68895 41.9909 6.25469 41.4552 6.25469Z" fill="white"/>
+            <path d="M115.053 61.3152H113.998V60.2602C113.998 59.7253 113.564 59.291 113.029 59.291C112.494 59.291 112.059 59.7245 112.059 60.2602V61.3152H111.004C110.469 61.3152 110.035 61.7495 110.035 62.2845C110.035 62.8195 110.469 63.2537 111.004 63.2537H112.059V64.3087C112.059 64.8437 112.494 65.2779 113.029 65.2779C113.564 65.2779 113.998 64.8445 113.998 64.3087V63.2537H115.053C115.588 63.2537 116.022 62.8195 116.022 62.2845C116.021 61.7487 115.588 61.3152 115.053 61.3152Z" fill="white"/>
+            <path d="M90.8891 9.95986C91.4513 9.95986 91.9071 9.50407 91.9071 8.94184C91.9071 8.37961 91.4513 7.92383 90.8891 7.92383C90.3269 7.92383 89.8711 8.37961 89.8711 8.94184C89.8711 9.50407 90.3269 9.95986 90.8891 9.95986Z" fill="white"/>
+            <path d="M75.2821 1.01802C75.2821 1.58052 74.8266 2.03603 74.2641 2.03603C73.7016 2.03603 73.2461 1.58052 73.2461 1.01802C73.2461 0.455514 73.7024 1.01577e-06 74.2641 1.01577e-06C74.8258 -0.0007857 75.2821 0.455514 75.2821 1.01802Z" fill="white"/>
+            <path d="M27.2079 11.5668C27.2079 12.1293 26.7524 12.5848 26.1899 12.5848C25.6274 12.5848 25.1719 12.1293 25.1719 11.5668C25.1719 11.0043 25.6274 10.5488 26.1899 10.5488C26.7516 10.548 27.2079 11.0043 27.2079 11.5668Z" fill="white"/>
+            <path d="M5.52819 41.3383C5.52819 41.9008 5.0727 42.3563 4.5102 42.3563C3.9477 42.3563 3.49219 41.9008 3.49219 41.3383C3.49219 40.7758 3.9477 40.3203 4.5102 40.3203C5.0727 40.3203 5.52819 40.7758 5.52819 41.3383Z" fill="white"/>
+            <path d="M17.4813 5.67815C17.4813 6.24065 17.025 6.69616 16.4633 6.69616C15.9008 6.69616 15.4453 6.24065 15.4453 5.67815C15.4453 5.11565 15.9008 4.66016 16.4633 4.66016C17.025 4.66016 17.4813 5.11643 17.4813 5.67815Z" fill="white"/>
+            <path d="M99.186 73.9442C99.7482 73.9442 100.204 73.4884 100.204 72.9262C100.204 72.364 99.7482 71.9082 99.186 71.9082C98.6238 71.9082 98.168 72.364 98.168 72.9262C98.168 73.4884 98.6238 73.9442 99.186 73.9442Z" fill="white"/>
+            <path d="M118.19 48.3426C118.752 48.3426 119.208 47.8869 119.208 47.3246C119.208 46.7624 118.752 46.3066 118.19 46.3066C117.628 46.3066 117.172 46.7624 117.172 47.3246C117.172 47.8869 117.628 48.3426 118.19 48.3426Z" fill="white"/>
+            <path d="M113.03 4.43359C111.894 4.43359 111.06 5.49881 111.333 6.601L113.03 13.4525L114.726 6.601C114.999 5.4996 114.165 4.43359 113.03 4.43359Z" fill="white"/>
+            <path d="M122.516 14.392L115.664 16.0881L122.516 17.7843C123.618 18.0573 124.683 17.2234 124.683 16.0881C124.683 14.9529 123.617 14.119 122.516 14.392Z" fill="white"/>
+            <path d="M113.03 18.7227L111.333 25.5741C111.06 26.6763 111.894 27.7416 113.03 27.7416C114.165 27.7416 114.999 26.6763 114.726 25.5741L113.03 18.7227Z" fill="white"/>
+            <path d="M103.542 14.392C102.44 14.119 101.375 14.9529 101.375 16.0881C101.375 17.2234 102.44 18.0573 103.542 17.7843L110.394 16.0881L103.542 14.392Z" fill="white"/>
+            <path d="M106.955 10.0158C106.425 10.546 106.534 11.4319 107.175 11.8189L111.164 14.2255L108.758 10.2361C108.372 9.5941 107.486 9.48554 106.955 10.0158Z" fill="white"/>
+            <path d="M119.104 10.0158C118.575 9.48554 117.688 9.5941 117.301 10.2361L114.895 14.2255L118.884 11.8189C119.526 11.4319 119.634 10.5452 119.104 10.0158Z" fill="white"/>
+            <path d="M118.884 20.3578L114.895 17.9512L117.301 21.9406C117.688 22.5826 118.575 22.6904 119.104 22.1609C119.634 21.6314 119.526 20.7448 118.884 20.3578Z" fill="white"/>
+            <path d="M106.955 22.1609C107.484 22.6904 108.371 22.5826 108.758 21.9406L111.165 17.9512L107.175 20.3578C106.533 20.7448 106.425 21.6314 106.955 22.1609Z" fill="white"/>
+            <path d="M11.6545 46.3066C10.5193 46.3066 9.68538 47.3718 9.95837 48.474L11.6545 55.3255L13.3507 48.474C13.6237 47.3718 12.7898 46.3066 11.6545 46.3066Z" fill="white"/>
+            <path d="M21.1406 56.2648L14.2891 57.9609L21.1406 59.6571C22.2428 59.9301 23.308 59.0962 23.308 57.9609C23.308 56.8257 22.242 55.9926 21.1406 56.2648Z" fill="white"/>
+            <path d="M11.6545 60.5957L9.95837 67.4472C9.68538 68.5494 10.5193 69.6146 11.6545 69.6146C12.7898 69.6146 13.6237 68.5494 13.3507 67.4472L11.6545 60.5957Z" fill="white"/>
+            <path d="M2.16741 56.265C1.06522 55.992 0 56.8259 0 57.9612C0 59.0964 1.06522 59.9303 2.16741 59.6573L9.01892 57.9612L2.16741 56.265Z" fill="white"/>
+            <path d="M5.58024 51.8869C5.04999 52.4171 5.15856 53.303 5.80052 53.69L9.78994 56.0966L7.38338 52.1072C6.99711 51.4652 6.11048 51.3566 5.58024 51.8869Z" fill="white"/>
+            <path d="M17.7285 51.8869C17.199 51.3566 16.3124 51.4652 15.9253 52.1072L13.5195 56.0966L17.509 53.69C18.1509 53.303 18.2587 52.4163 17.7285 51.8869Z" fill="white"/>
+            <path d="M17.509 62.2308L13.5195 59.8242L15.9253 63.8137C16.3124 64.4556 17.199 64.5634 17.7285 64.0332C18.2587 63.5045 18.1509 62.6179 17.509 62.2308Z" fill="white"/>
+            <path d="M5.57991 64.0332C6.10937 64.5634 6.99599 64.4548 7.38305 63.8137L9.78961 59.8242L5.80019 62.2308C5.15823 62.6171 5.05045 63.5037 5.57991 64.0332Z" fill="white"/>
+          </svg>
+        </div>
+        <span class="sale-burst bn-sale-banner__burst d-none" style="--sale-burst-content-rotation:0deg">
+        <svg class="bn-sale-banner__burst-shape" width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.4451 5.14433C11.697 3.31984 13.7067 2.15946 15.9127 1.98759C16.8663 1.91338 17.9328 2.10985 20.0655 2.50268C20.9144 2.65912 21.3396 2.73707 21.7609 2.76537C22.7271 2.83007 23.6972 2.70285 24.6138 2.39024C25.0134 2.25391 25.4035 2.06816 26.1827 1.69755C28.1415 0.765886 29.1209 0.299703 30.0614 0.12462C32.2364 -0.280294 34.4779 0.320445 36.1591 1.75851C36.8859 2.38047 37.5023 3.27411 38.733 5.06041C39.2225 5.77118 39.4675 6.1268 39.7454 6.44476C40.3827 7.17355 41.1583 7.7687 42.0272 8.1957C42.4062 8.38208 42.8133 8.52677 43.6268 8.8159C45.6709 9.54217 46.6932 9.90533 47.4821 10.4466C49.3064 11.6985 50.4669 13.7083 50.6388 15.9142C50.7131 16.8679 50.5159 17.9344 50.1229 20.0675C49.9665 20.9164 49.8883 21.3416 49.8602 21.7629C49.7955 22.729 49.9235 23.6987 50.2362 24.6152C50.3726 25.0149 50.5581 25.4049 50.9288 26.1842C51.8604 28.1431 52.3257 29.123 52.5009 30.0633C52.9058 32.2384 52.3052 34.4798 50.867 36.1611C50.2451 36.8878 49.3522 37.5038 47.566 38.7345C46.8553 39.2239 46.4996 39.469 46.1816 39.7469C45.4527 40.3843 44.8569 41.1601 44.4299 42.0291C44.2436 42.4081 44.0987 42.8153 43.8097 43.6287C43.0835 45.6725 42.721 46.6947 42.1798 47.4835C40.928 49.3079 38.9181 50.4682 36.7122 50.6403C35.7584 50.7146 34.6915 50.5179 32.5581 50.1248C31.7091 49.9685 31.2841 49.8902 30.8627 49.8621C29.8967 49.7975 28.9275 49.9251 28.0112 50.2376C27.6114 50.374 27.221 50.5598 26.4414 50.9308C24.4827 51.8623 23.5025 52.3276 22.5622 52.5029C20.3872 52.9077 18.1456 52.3072 16.4645 50.869C15.7375 50.2471 15.1225 49.3537 13.8919 47.5675C13.4023 46.8568 13.1567 46.5015 12.8787 46.1836C12.2412 45.4546 11.4655 44.8588 10.5964 44.4318C10.2174 44.2456 9.81016 44.1006 8.99682 43.8116C6.95342 43.0854 5.93162 42.7224 5.14287 42.1813C3.31832 40.9294 2.15803 38.9197 1.98613 36.7137C1.91179 35.7599 2.1078 34.6933 2.50072 32.56C2.65714 31.711 2.73519 31.2861 2.76341 30.8646C2.8281 29.8986 2.70042 28.9295 2.38793 28.0131C2.25162 27.6134 2.06679 27.2231 1.69608 26.4437C0.764374 24.4848 0.297743 23.5046 0.122667 22.5642C-0.282132 20.3892 0.318481 18.1476 1.75656 16.4664C2.37836 15.7395 3.27201 15.1243 5.0581 13.8938C5.76907 13.4041 6.12531 13.1591 6.4433 12.881C7.17217 12.2436 7.76673 11.4674 8.19374 10.5984C8.38005 10.2192 8.52488 9.81226 8.81395 8.99877C9.54026 6.95493 9.90385 5.93313 10.4451 5.14433Z" fill="#F44336"/>
+        </svg>
+        <svg class="bn-sale-banner__christmas--xmas" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.47784 12.8958C9.34712 12.8208 9.29871 12.6562 9.36649 12.5231L9.94501 11.4023L11.1214 11.4387C11.2763 11.4435 11.3998 11.5742 11.3949 11.7291C11.3901 11.884 11.2594 12.0075 11.1045 12.0026L10.2839 11.9784L9.86997 12.7845C9.79978 12.9225 9.62791 12.9781 9.48994 12.9055C9.4851 12.9007 9.47784 12.8958 9.47784 12.8958Z" fill="white"/>
+          <path d="M13.576 7.57751C13.5349 7.5533 13.4986 7.51941 13.4744 7.47584L12.8789 6.46161L13.5857 5.41834C13.6729 5.29005 13.8471 5.25616 13.9754 5.3433C14.1037 5.43044 14.1376 5.60473 14.0505 5.73302L13.5421 6.4834L13.9561 7.19263C14.0335 7.32577 13.99 7.50005 13.8544 7.57751C13.7697 7.63076 13.6608 7.62834 13.576 7.57751Z" fill="white"/>
+          <path d="M3.46588 13.0144C3.33032 12.9369 3.28433 12.765 3.36179 12.6295L10.5146 0.141659C10.5921 0.00610617 10.764 -0.0398879 10.8995 0.037571C11.0351 0.11503 11.0811 0.286893 11.0036 0.422446L3.85075 12.9103C3.77329 13.0458 3.60143 13.0918 3.46588 13.0144Z" fill="white"/>
+          <path d="M0.142849 6.82462C0.0581286 6.77621 0.00245493 6.68665 3.43375e-05 6.58256C-0.00238626 6.42764 0.123485 6.29935 0.278403 6.29935L13.9136 6.18558C14.0685 6.18316 14.1968 6.30903 14.1968 6.46395C14.1992 6.61887 14.0734 6.74716 13.9184 6.74716L0.285664 6.86093C0.234832 6.86093 0.183999 6.84882 0.142849 6.82462Z" fill="white"/>
+          <path d="M10.4563 12.7637C10.4152 12.7395 10.3789 12.7056 10.3522 12.6621L3.49469 0.876192C3.41723 0.740639 3.46322 0.568776 3.59635 0.491317C3.73191 0.413858 3.90377 0.457428 3.98123 0.592981L10.8388 12.3788C10.9162 12.5144 10.8702 12.6863 10.7371 12.7637C10.6475 12.8146 10.541 12.8121 10.4563 12.7637Z" fill="white"/>
+          <path d="M10.0177 1.56802L9.42709 0.454545C9.35447 0.316571 9.40772 0.144707 9.54327 0.0720891C9.68125 -0.000528704 9.85069 0.0503046 9.92331 0.188278L10.3493 0.989493L11.1699 0.955605C11.3248 0.948343 11.4555 1.06937 11.4628 1.22429C11.4701 1.37921 11.349 1.50992 11.1941 1.51718L10.0177 1.56802Z" fill="white"/>
+          <path d="M2.95539 1.61927C2.86825 1.56844 2.81015 1.47404 2.81257 1.36753C2.81499 1.21261 2.94571 1.08916 3.10062 1.09159L4.00593 1.11337L4.37628 0.382349C4.44647 0.244375 4.61591 0.1887 4.75389 0.258897C4.89186 0.329094 4.94754 0.498536 4.87734 0.63651L4.34723 1.68463L3.0861 1.65558C3.04011 1.65316 2.99654 1.64106 2.95539 1.61927Z" fill="white"/>
+          <path d="M0.595907 7.71284C0.588645 7.71042 0.583804 7.70558 0.576542 7.70074C0.448251 7.6136 0.414363 7.43932 0.501504 7.31103L1.00983 6.56064L0.595907 5.85383C0.518448 5.71828 0.562018 5.54641 0.697572 5.46896C0.830704 5.38908 1.00499 5.43507 1.08245 5.57062L1.67791 6.58485L0.968678 7.6257C0.886378 7.74916 0.721777 7.78546 0.595907 7.71284Z" fill="white"/>
+          <path d="M2.99617 11.9809C2.91629 11.9349 2.8582 11.8477 2.85578 11.7485C2.84852 11.5936 2.96955 11.4629 3.12447 11.4556L4.38559 11.4023L4.93749 12.4408C5.01011 12.5788 4.95927 12.7482 4.8213 12.8208C4.68333 12.8934 4.51389 12.8426 4.44127 12.7046L4.05639 11.9784L3.15109 12.0172C3.093 12.0196 3.03974 12.0051 2.99617 11.9809Z" fill="white"/>
+          <path d="M6.95922 11.8484C6.87208 11.8 6.81641 11.7056 6.81641 11.5991L6.95922 1.53423C6.96164 1.37931 7.08993 1.25586 7.24485 1.25586C7.39977 1.25828 7.52564 1.38657 7.52322 1.54149L7.3804 11.6063C7.37798 11.7612 7.24969 11.8871 7.09477 11.8847C7.04636 11.8847 7.00037 11.8702 6.95922 11.8484Z" fill="white"/>
+          <path d="M11.0031 9.15075C11.0031 9.14833 11.0031 9.14833 11.0031 9.15075L2.76095 4.36282C2.6254 4.28537 2.58183 4.1135 2.65929 3.97795C2.73674 3.84482 2.90861 3.79883 3.04174 3.87387C3.04174 3.87387 3.04174 3.87387 3.04416 3.87387L11.2863 8.65938C11.4218 8.73683 11.4654 8.9087 11.3879 9.04425C11.3105 9.1798 11.1386 9.22579 11.0031 9.15075Z" fill="white"/>
+          <path d="M2.32562 4.69964C2.28205 4.67544 2.24332 4.63671 2.21669 4.5883C2.14407 4.45274 2.19491 4.28088 2.33046 4.20826L2.72986 3.99283L2.71049 3.58859C2.70323 3.43367 2.82184 3.30054 2.97918 3.29328C3.1341 3.28602 3.26723 3.40705 3.27449 3.56197L3.3108 4.31961L2.59915 4.70206C2.50958 4.75047 2.40792 4.74563 2.32562 4.69964Z" fill="white"/>
+          <path d="M2.84906 5.23107C2.80549 5.20687 2.76676 5.16814 2.74013 5.11973C2.66751 4.98175 2.71834 4.81231 2.8539 4.7397L3.42032 4.4347L3.39611 3.85617C3.38885 3.70126 3.50746 3.56812 3.6648 3.56086C3.81971 3.5536 3.95285 3.67221 3.96011 3.82955L4.00368 4.76148L3.125 5.23349C3.03544 5.2819 2.93136 5.27706 2.84906 5.23107Z" fill="white"/>
+          <path d="M3.44671 5.6713C3.40314 5.6471 3.36441 5.60836 3.33779 5.55995C3.26517 5.42198 3.316 5.25254 3.45155 5.17992L4.21646 4.77084L4.18015 3.98899C4.17289 3.83407 4.2915 3.70094 4.44884 3.69368C4.60375 3.68641 4.73689 3.80502 4.74415 3.95994L4.7974 5.0952L3.72266 5.6713C3.6331 5.72456 3.52901 5.71729 3.44671 5.6713Z" fill="white"/>
+          <path d="M11.0361 9.68636C10.9562 9.64036 10.9005 9.55565 10.8957 9.4564L10.8594 8.69876L11.571 8.3163C11.709 8.24368 11.8784 8.29452 11.9511 8.43007C12.0237 8.56804 11.9728 8.73748 11.8373 8.81252L11.4379 9.02796L11.4573 9.42978C11.4645 9.58469 11.3459 9.71783 11.1886 9.72509C11.1353 9.72751 11.0821 9.71298 11.0361 9.68636Z" fill="white"/>
+          <path d="M10.3558 9.42872C10.276 9.38273 10.2203 9.298 10.2154 9.19876L10.1719 8.26684L11.0505 7.79482C11.1885 7.7222 11.358 7.77303 11.4306 7.90859C11.5032 8.04414 11.4524 8.216 11.3168 8.28862L10.7504 8.59361L10.777 9.17213C10.7843 9.32705 10.6657 9.46018 10.5083 9.46745C10.4551 9.46745 10.4018 9.45535 10.3558 9.42872Z" fill="white"/>
+          <path d="M9.57255 9.29473C9.49267 9.24874 9.437 9.16401 9.43216 9.06477L9.37891 7.92951L10.4536 7.35341C10.5916 7.28079 10.7611 7.33162 10.8337 7.46718C10.9063 7.60273 10.8555 7.77459 10.7199 7.84721L9.95501 8.25629L9.99132 9.03814C9.99858 9.19306 9.87997 9.32619 9.72263 9.33345C9.66938 9.33345 9.61612 9.32135 9.57255 9.29473Z" fill="white"/>
+          <path d="M2.794 9.22066C2.75285 9.19646 2.71654 9.16257 2.68992 9.11658C2.61246 8.98103 2.65845 8.80916 2.794 8.7317L11.0168 3.9946C11.1523 3.91714 11.3242 3.96314 11.4016 4.09869C11.4791 4.23424 11.4331 4.40611 11.2975 4.48357L3.07479 9.22066C2.98523 9.2715 2.87872 9.26907 2.794 9.22066Z" fill="white"/>
+          <path d="M11.4411 4.86098L11.4387 4.85856L10.7852 4.47368L10.8554 3.66762C10.8699 3.51271 11.0054 3.39894 11.1603 3.41104C11.3153 3.42314 11.429 3.56112 11.4169 3.71604L11.3782 4.16626L11.7268 4.37202C11.8599 4.44948 11.9059 4.62375 11.826 4.75689C11.7461 4.89244 11.5767 4.93601 11.4411 4.86098Z" fill="white"/>
+          <path d="M10.8554 5.28731L10.8529 5.28489L10.0469 4.81288L10.134 3.81801C10.1485 3.66309 10.2841 3.54933 10.439 3.56143C10.5939 3.57595 10.7077 3.7115 10.6956 3.86642L10.6399 4.50788L11.1386 4.80077C11.2717 4.88065 11.3177 5.05251 11.2378 5.18565C11.1579 5.31878 10.9885 5.36477 10.8554 5.28731Z" fill="white"/>
+          <path d="M10.3109 5.87729L10.3085 5.87487L9.32812 5.29877L9.43463 4.08363C9.44915 3.92872 9.58471 3.81495 9.73963 3.82705C9.89454 3.84158 10.0083 3.97713 9.99621 4.13205L9.92117 4.99378L10.5941 5.39076C10.7272 5.47064 10.7732 5.64249 10.6933 5.77563C10.6159 5.90876 10.444 5.95475 10.3109 5.87729Z" fill="white"/>
+          <path d="M2.79463 9.77801C2.70265 9.72476 2.64456 9.62067 2.65424 9.5069L2.69781 9.05668L2.35166 8.8485C2.21853 8.76862 2.17496 8.59676 2.25484 8.46121C2.33472 8.3305 2.50416 8.2845 2.63729 8.36196L2.64214 8.36438L3.29327 8.7541L3.21824 9.55774C3.20371 9.71265 3.06574 9.82642 2.91082 9.8119C2.86725 9.80948 2.82852 9.79737 2.79463 9.77801Z" fill="white"/>
+          <path d="M3.51761 9.64239C3.42563 9.58913 3.36753 9.48505 3.37721 9.37128L3.43773 8.73224L2.94151 8.43451C2.80838 8.35463 2.7648 8.18277 2.84468 8.04963C2.92456 7.9165 3.09401 7.87293 3.22714 7.95039L3.23198 7.95281L4.0332 8.43209L3.93879 9.42695C3.92427 9.58187 3.78629 9.69564 3.63138 9.68111C3.59023 9.67385 3.5515 9.66175 3.51761 9.64239Z" fill="white"/>
+          <path d="M4.2194 9.37532C4.12742 9.32207 4.06932 9.21798 4.07901 9.10421L4.16131 8.24248L3.48838 7.84308C3.35525 7.7632 3.31168 7.59134 3.39156 7.45821C3.47144 7.32508 3.64572 7.27908 3.77643 7.36138L4.75193 7.94475L4.63816 9.15747C4.62364 9.31238 4.48567 9.42615 4.33075 9.41163C4.29202 9.40679 4.25329 9.39468 4.2194 9.37532Z" fill="white"/>
+          <path d="M7.24374 1.97542L6.57323 1.52519C6.44494 1.43805 6.41105 1.26377 6.49577 1.13548C6.58533 1.00477 6.75962 0.970875 6.88791 1.05802L7.2631 1.30976L7.61167 1.10401C7.7448 1.02413 7.91908 1.07012 7.99654 1.20325C8.07642 1.33639 8.03043 1.51067 7.8973 1.58813L7.24374 1.97542Z" fill="white"/>
+          <path d="M7.19014 2.7808L6.36229 2.22407C6.234 2.13693 6.20011 1.96265 6.28484 1.83435C6.37198 1.70606 6.54626 1.67217 6.67455 1.75932L7.20708 2.11756L7.70572 1.82225C7.83886 1.74237 8.01314 1.78836 8.0906 1.92149C8.17048 2.05463 8.12449 2.22891 7.99135 2.30637L7.19014 2.7808Z" fill="white"/>
+          <path d="M7.25691 3.6391L6.24511 2.9565C6.11682 2.86935 6.08293 2.69507 6.16765 2.56678C6.25479 2.43849 6.42907 2.4046 6.55736 2.49174L7.27386 2.97344L7.94678 2.57646C8.07992 2.49658 8.2542 2.54257 8.33166 2.6757C8.41154 2.80884 8.36555 2.98312 8.23241 3.06058L7.25691 3.6391Z" fill="white"/>
+          <path d="M6.48868 12.1058C6.44753 12.0816 6.41122 12.0477 6.38701 12.0041C6.30713 11.871 6.35313 11.6967 6.48626 11.6193L7.13982 11.2344L7.81032 11.6846C7.93861 11.7717 7.9725 11.946 7.88778 12.0743C7.80064 12.2026 7.62636 12.2365 7.49807 12.1518L7.12045 11.9L6.77189 12.1058C6.68233 12.159 6.5734 12.1542 6.48868 12.1058Z" fill="white"/>
+          <path d="M6.39547 11.3789C6.35432 11.3547 6.31801 11.3209 6.29381 11.2773C6.21393 11.1417 6.2575 10.9699 6.39305 10.8924L7.19669 10.418L8.02453 10.9747C8.15282 11.0618 8.18671 11.2361 8.10199 11.3644C8.01485 11.4927 7.84057 11.5266 7.71228 11.4395L7.17975 11.0812L6.67868 11.3765C6.5867 11.4298 6.4802 11.4274 6.39547 11.3789Z" fill="white"/>
+          <path d="M6.14883 10.6139C6.10768 10.5897 6.07138 10.5558 6.04717 10.5122C5.96729 10.3791 6.01328 10.2048 6.14641 10.1273L7.12675 9.54883L8.13856 10.229C8.26685 10.3162 8.30074 10.4904 8.21602 10.6187C8.12888 10.747 7.9546 10.7809 7.8263 10.6938L7.10981 10.2121L6.43688 10.609C6.34248 10.6671 6.23356 10.6623 6.14883 10.6139Z" fill="white"/>
+          <path d="M8.3126 7.21427C7.94951 7.84604 7.14346 8.06632 6.51168 7.70323C5.87991 7.34014 5.65963 6.53408 6.02272 5.90231C6.38581 5.27053 7.19187 5.05026 7.82364 5.41334C8.45784 5.77643 8.67569 6.58249 8.3126 7.21427Z" fill="white"/>
+        </svg>
+        <svg class="bn-sale-banner__christmas-hat" width="103" height="71" viewBox="0 0 103 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M65.4902 0.97242C39.8413 -3.80359 18.8357 15.3447 11.5391 25.5158L72.5658 52.7122C75.0423 50.5895 75.6614 44.0152 75.6614 40.9933C82.9138 43.8235 86.938 49.9852 88.0436 52.7122C89.6356 50.7664 92.3921 50.28 93.5714 50.28C94.8981 35.8341 91.1392 5.74843 65.4902 0.97242Z" fill="#FD253E" stroke="#FD253E" stroke-width="0.442223"/>
+          <circle cx="93.5992" cy="56.8257" r="9.28668" fill="white"/>
+          <path d="M84.3877 55.6562C86.5307 60.2939 93.0484 66.8783 102.664 57.2627L102.86 57.4756C102.526 62.3007 98.5087 66.1113 93.5986 66.1113C88.4701 66.1111 84.3127 61.9537 84.3125 56.8252C84.3125 56.4293 84.3396 56.0391 84.3877 55.6562Z" fill="#CDE3F8"/>
+          <path d="M2.03046 36.1293C-0.622876 38.7827 0.335274 41.6571 1.14602 42.7627C37.8504 50.2811 61.7306 69.0743 65.7106 69.9588C69.6906 70.8432 71.9017 66.8632 71.6806 64.431C71.5037 62.4852 72.1966 61.2617 72.5651 60.8932C76.2797 58.063 76.2336 55.809 75.2184 54.9232C52.6651 35.2443 12.423 25.7363 10.2117 25.0738C8.22165 24.4775 6.67387 25.2948 5.3472 27.2849C4.21644 28.9811 5.34713 32.8127 2.03046 36.1293Z" fill="#FEFEFE" stroke="#FEFEFE" stroke-width="0.442223"/>
+          <path d="M48.3239 44.179C45.1679 35.6125 38.1795 34.2224 34.2344 32.3438C35.1361 32.3438 42.6881 35.7252 45.506 36.8524C47.7604 39.5576 47.3846 40.9853 48.3239 44.179Z" fill="#CDE3F8"/>
+          <path d="M9.43688 34.5802C4.92822 30.0716 7.74596 25.589 10.5639 25.0204C8.87312 24.4545 6.84446 24.7739 5.49186 26.1265C3.80111 27.8172 4.92822 32.8895 2.11031 35.7074C-0.144022 37.9617 -0.707759 40.2176 0.983142 43.034L11.1275 45.2899C2.67377 39.092 5.30398 35.3317 9.43688 34.5802Z" fill="#CDE3F8"/>
+          <path d="M49.4515 52.069C45.8446 54.7742 29.5382 50.9418 21.8359 48.6875C22.3995 48.8508 63.541 70.6672 66.359 70.6672C69.3939 70.6672 71.9948 68.4529 71.9948 64.4678C71.9948 61.0863 76.5034 58.2684 76.5034 56.0141C76.5034 54.3233 71.9948 52.069 71.4312 51.5054C72.5584 53.1962 74.1364 56.8031 73.6855 57.7048C73.1219 58.832 70.304 59.3956 68.6133 65.0314C67.2607 69.5401 52.6451 61.2742 45.5064 56.5777C47.7607 56.5777 49.0758 53.5719 49.4515 52.069Z" fill="#CDE3F8"/>
+        </svg>
+        <span class="sale-burst__content bn-sale-banner__burst-content">
+        <div class="bn-sale-banner__burst-value">62</div>
+        <div class="bn-sale-banner__burst-meta"><span class="bn-sale-banner__burst-percent">%</span><span class="bn-sale-banner__burst-off">OFF</span></div></span></span></div>
+
+      </div>
+      <div class="bn-sale-banner__timer" style="display:none;">
+        <span class="bn-sale-banner__timer-value" data-sale-end="2026-01-15T06:00:00+00:00"></span>
+      </div>
+    </div>
+
+    <!-- Center: Content and Actions -->
+    <div class="bn-sale-banner__wrapper__center">
+      <div class="bn-sale-banner__content-wrapper is-desktop">
+        <div class="bn-sale-banner__title"><p>Stop copy pasting code you don't actually understand</p></div>
+        <div class="bn-sale-banner__message">Build the coding confidence you need to become a developer companies will fight for</div>
+      </div>
+
+      <div class="bn-sale-banner__content-wrapper is-mobile">
+        <div class="bn-sale-banner__title"><p>Stop copy pasting code you don't actually understand</p></div>
+      </div>
+
+      <div class="bn-sale-banner__wrapper__right">
+        <span class="bn-sale-banner__cta">Become a PRO</span>
+      </div>
+    </div>
+
+    <!-- Right: CTA -->
+    <div class="bn-sale-banner__wrapper__right">
+      <span class="bn-sale-banner__cta">Become a PRO</span>
+    </div>
+
+    <div class="bn-sale-banner__bg-image">
+      <svg width="188" height="96" viewBox="0 0 188 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_6015_17150)">
+        <path d="M149.016 -17.5312C-19.2698 -12.2221 64.1774 327.089 -98.6797 327.089" stroke="white" stroke-width="1.0018"/>
+        <path d="M160.539 -9.76758C-1.50266 -4.75857 67.1208 335.854 -99.9297 335.854" stroke="white" stroke-width="1.0018"/>
+        <path d="M181.828 -8.26562C8.76658 9.26591 70.7692 335.603 -85.1523 335.603" stroke="white" stroke-width="1.0018"/>
+        <path d="M200.864 -2.75391C11.7738 20.0371 79.3954 338.61 -79.6406 339.862" stroke="white" stroke-width="1.0018"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_6015_17150">
+        <rect width="187.337" height="278" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="bn-sale-banner__bg-image--mobile">
+      <svg width="122" height="100" viewBox="0 0 122 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_6111_17125)">
+        <path d="M97.0233 -11.4141C-12.5439 -7.95738 41.7867 212.961 -64.2461 212.961" stroke="white" stroke-width="0.652252"/>
+        <path d="M104.523 -6.35938C-0.978716 -3.09811 43.7006 218.668 -65.0625 218.668" stroke="white" stroke-width="0.652252"/>
+        <path d="M118.384 -5.38086C5.70725 6.03356 46.0758 218.505 -55.4414 218.505" stroke="white" stroke-width="0.652252"/>
+        <path d="M130.775 -1.79297C7.66256 13.0458 51.6896 220.462 -51.8555 221.277" stroke="white" stroke-width="0.652252"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_6111_17125">
+        <rect width="121.971" height="181" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</a>
+</div>
+
+<script>
+(function() {
+  // Add sale banner class to body
+  document.body.classList.add('bn-sale-active');
+
+  // Remove default-hidden class from all bn-sale-banner elements
+  document.querySelectorAll('.bn-sale-banner').forEach(function(el) {
+    el.classList.remove('default-hidden');
+  });
+
+  function isIndiaTimeZone() {
+    try {
+      const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      // List of possible Indian time zones
+      const indiaTimeZones = [
+        'Asia/Kolkata',
+        'Asia/Calcutta',
+        'Asia/Delhi',
+        'Asia/Mumbai',
+        'Asia/Chennai',
+        'Asia/Bangalore'
+      ];
+
+      return indiaTimeZones.includes(timezone);
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function applyIndiaContent() {
+    document.querySelectorAll('.bn-sale-banner__burst-value').forEach(function(el) {
+      el.textContent = '90';
+    });
+
+    const indiaUrl = 'https://programiz.pro?utm_source=programiz_compiler&utm_medium=referral&utm_audience=ORGANIC-FREEMIUM&utm_campaign=newyear-26&utm_content=interests_1_year&utm_term=sticky_banner_launch';
+
+    document.querySelectorAll('.bn-sale-banner__link').forEach(function(el) {
+      el.setAttribute('href', indiaUrl);
+    });
+  }
+
+  const isIndia = isIndiaTimeZone();
+
+  if (isIndia) {
+    applyIndiaContent();
+  } else {
+      // Unhide left content for non-India users
+      document.querySelectorAll('.bn-sale-banner__wrapper__left').forEach(function(el) {
+        el.classList.remove('d-none');
+      });
+  }
+
+  function updateTimer() {
+    const timerElements = document.querySelectorAll('.bn-sale-banner__timer-value');
+
+    timerElements.forEach(function(timer) {
+      const saleEndDate = timer.getAttribute('data-sale-end');
+      if (!saleEndDate) return;
+
+      const endTime = new Date(saleEndDate).getTime();
+      const now = new Date();
+
+      // Calculate time remaining until sale end
+      let totalDistance = endTime - now.getTime();
+
+      // If sale ended, hide timer
+      if (totalDistance < 0) {
+        timer.closest('.bn-sale-banner__timer').style.display = 'none';
+        return;
+      }
+
+      // Show countdown for current 24-hour window
+      // let distance = totalDistance % (24 * 60 * 60 * 1000);
+      let distance = totalDistance;
+
+      // If less than 24 hours remain, show actual time left
+      // if (totalDistance < 24 * 60 * 60 * 1000) {
+      //   distance = totalDistance;
+      // }
+
+      if (distance < 0) {
+        timer.closest('.bn-sale-banner__timer').style.display = 'none';
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      // const hours = Math.floor(distance / (1000 * 60 * 60)); // total hours
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      timer.textContent =  days + 'd: ' + hours + 'h: ' +
+                          (minutes < 10 ? '0' : '') + minutes + 'm: ' +
+                          (seconds < 10 ? '0' : '') + seconds + 's';
+    });
+  }
+
+  // Show timer to non indian users only
+  if (!isIndia) {
+    // Update immediately and then every second
+    updateTimer();
+
+    // Show all timers
+    document.querySelectorAll('.bn-sale-banner__timer').forEach(function(timer) {
+      timer.style.removeProperty('display');
+    });
+
+    setInterval(updateTimer, 1000);
+  }
+})();
+</script>
+
+    <div class="wrapper">
+      <div class="header">
+        <div class="header-wrapper">
+          <div class="burger-menu">
+            <button type="button" class="burger-menu-btn" title="Open navigation">
+              <img class="svg burger-menu-btn-icon" src="https://cdn.playground-v2.programiz.com/assets/icons/burger.svg" />
+            </button>
+          </div>
+          <div class="logo-wrapper">
+            <h1 class="logo-title-wrapper">
+              <a href="https://www.programiz.com/" target="_blank" class="logo-link">
+                <img id="logo" src="https://cdn.playground-v2.programiz.com/assets/logos/logo.svg" />
+                <span class="logo-sub-title-wrapper">
+                  <span class="logo-sub-title">
+                    Online Java                    Compiler                  </span>
+                </span>
+              </a>
+            </h1>
+          </div>
+        </div>
+        <div class="compiler-header-ad">
+          <!-- Pub-galaxy -->
+          <div id="div-gpt-ad-Programizcom36786" class="content-top-ad"></div>
+
+          <!-- buysell ads -->
+          <div class="compiler-header-ad" id="carbon-block"></div>
+        </div>
+        <div id="add-replacement"></div>
+        <div id="feedback-desktop">
+          <a id="ad-link">&nbsp;Learn Python App</a>
+        </div>
+        <div id="feedback-mobile">
+          <a id="mobile-ad-link">&nbsp;Learn Python</a>
+        </div>
+      </div>
+      <div class="mobile-top-bar clearfix">
+        <div class="pills-wrapper">
+          <div class="pills clearfix">
+            <button class="pill active compiler-pill" id="executed-file-name-mobile"
+              title="Main.java">
+              Main.java            </button>
+            <button class="pill shell-pill">
+              Output            </button>
+          </div>
+        </div>
+
+        <!-- Change the position of option wrapper which contain dark mode toggle and share in mob view -->
+        <div class="options-wrapper">
+          <!-- <div id="back-button" class="options-item-wrapper clearfix">
+              <img class="svg options-item" src="https://cdn.playground-v2.programiz.com/assets/icons/back-arrow.svg" />
+            </div> -->
+          <div id="toggle-dark-mode-mobile" class="options-item-wrapper clearfix">
+            <img class="toggle-dark-mode-mobile-icon moon svg options-item" src="https://cdn.playground-v2.programiz.com/assets/icons/moon.svg" />
+            <img class="toggle-dark-mode-mobile-icon sun svg options-item" src="https://cdn.playground-v2.programiz.com/assets/icons/sun.svg" />
+          </div>
+          <button class="share-button-mob" title="Share">
+            <img class="svg share-icon" src="https://cdn.playground-v2.programiz.com/assets/icons/share.svg" />
+          </button>
+        </div>
+        <div class="other-options-wrapper">
+          <!-- <div id="feedback-mobile" class="options-item-wrapper">
+              <a href="https://programiz.com/contact" class="options-item">
+                <img class="svg" src="https://cdn.playground-v2.programiz.com/assets/icons/message-square.svg" />
+              </a>
+            </div> -->
+          <div class="mobile-top-bar-run-button run">
+
+            <img src="https://cdn.playground-v2.programiz.com/assets/icons/play.svg" alt="run-icon" />
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-wrapper">
+        <a target="_blank"
+          href="https://www.programiz.com/python-programming/online-compiler/"
+          class="change-lang-btn python "
+          title="Online Python Compiler">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/python.svg" alt="Python Online" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/r/online-compiler/"
+          class="change-lang-btn r " title="Online R Compiler">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/r.svg" alt="R Programming Online" />
+        </a>
+
+        <a target="_blank" href="https://www.programiz.com/sql/online-compiler/" class="change-lang-btn sql"
+          title="Online SQL Editor">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/sql.svg" alt="SQL Online" />
+        </a>
+
+        <a target="_blank" href="https://www.programiz.com/html/online-compiler/" class="change-lang-btn html"
+          title="Online HTML/CSS Editor">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/html.svg" alt="HTML/CSS Online" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/java-programming/online-compiler/"
+          class="change-lang-btn java active" title="Online Java Compiler">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/java.svg" alt="Java Online" />
+        </a>
+        <!-- <a target="_blank"
+          href="https://www.programiz.com/kotlin-programming/online-compiler/"
+          class="change-lang-btn kotlin "
+          title="Online Kotlin Compiler (Editor)">
+          <img class="change-lang-btn-icon svg" src="./assets/icons/kotlin.svg" />
+        </a> -->
+        <a target="_blank"
+          href="https://www.programiz.com/kotlin-programming/online-compiler/"
+          class="change-lang-btn kotlin "
+          title="Online Kotlin Compiler (Editor)">
+          <img class="change-lang-btn-icon svg" src="./assets/icons/kotlin.svg" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/c-programming/online-compiler/"
+          class="change-lang-btn c " title="Online C Compiler">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/c.svg" alt="C Programming Online" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/cpp-programming/online-compiler/"
+          class="change-lang-btn cpp " title="Online C++ Compiler">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/cpp.svg" alt="C++ Programming Online" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/csharp-programming/online-compiler/"
+          class="change-lang-btn csharp " title="Online C# Compiler">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/csharp.svg" alt="C# Online" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/javascript/online-compiler/"
+          class="change-lang-btn javascript "
+          title="Online JavaScript Compiler (Editor)">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/javascript.svg" alt="JavaScript Online" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/typescript/online-compiler/"
+          class="change-lang-btn typescript "
+          title="Online Typescript Compiler (Editor)">
+          <img class="change-lang-btn-icon svg" src="./assets/icons/typescript.svg" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/golang/online-compiler/"
+          class="change-lang-btn golang "
+          title="Online Golang Compiler">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/golang.svg" alt="Golang Online" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/rust/online-compiler/"
+          class="change-lang-btn rust " title="Online Rust Compiler">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/rust.svg" alt="Rust Online" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/scala/online-compiler/"
+          class="change-lang-btn scala "
+          title="Online Scala Compiler (Editor)">
+          <img class="change-lang-btn-icon svg" src="./assets/icons/scala.svg" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/dart/online-compiler/"
+          class="change-lang-btn dart "
+          title="Online Dart Compiler (Editor)">
+          <img class="change-lang-btn-icon svg" src="./assets/icons/dart.svg" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/ruby/online-compiler/"
+          class="change-lang-btn ruby "
+          title="Online Ruby Compiler (Editor)">
+          <img class="change-lang-btn-icon svg" src="./assets/icons/ruby.svg" />
+        </a>
+        <!-- <a target="_blank"
+          href="https://www.programiz.com/bash/online-compiler/"
+          class="change-lang-btn bash "
+          title="Online Bash Interpreter (Editor)">
+          <img class="change-lang-btn-icon svg" src="./assets/icons/bash.svg" />
+        </a> -->
+        <a target="_blank"
+          href="https://www.programiz.com/php/online-compiler/"
+          class="change-lang-btn php " title="Online PHP Compiler ">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/php.svg" alt="PHP Online" />
+        </a>
+        <a target="_blank"
+          href="https://www.programiz.com/swift/online-compiler/"
+          class="change-lang-btn swift " title="Online Swift Compiler ">
+          <img class="change-lang-btn-icon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/swift.svg" alt="Swift Online" />
+        </a>
+      </div>
+      <div class="editor-wrapper">
+        <div class="editor-desktop-top-bar">
+          <div class="file-name" id="executed-file-name" title="Main.java">
+            Main.java          </div>
+          <div class="desktop-top-bar__btn-wrapper">
+            <button type="button" id="toggle-expanded-mode-desktop" title="Enter Fullscreen">
+              <img class="toggle-expanded-mode-mobile-icon expand svg" src="https://cdn.playground-v2.programiz.com/assets/icons/expand.svg" />
+              <img class="toggle-expanded-mode-mobile-icon minimize hidden svg" src="https://cdn.playground-v2.programiz.com/assets/icons/minimize.svg" />
+            </button>
+            <button type="button" id="toggle-dark-mode-desktop" title="Toggle dark mode">
+              <img class="toggle-dark-mode-mobile-icon moon svg" src="https://cdn.playground-v2.programiz.com/assets/icons/moon.svg" />
+              <img class="toggle-dark-mode-mobile-icon sun svg" src="https://cdn.playground-v2.programiz.com/assets/icons/sun.svg" />
+            </button>
+            <!-- Change first none to flex to re-enable the save button -->
+            <!--  Uncomment this if require in future -->
+            <!-- <button class="desktop-save-button"
+                            style="display: none">
+
+                            <span>
+                                &nbsp;Save&nbsp;
+                            </span>
+                        </button> -->
+            <button class="share-button" title="Share">
+              <img class="toggle-expanded-mode-mobile-icon svg share-icon" src="https://cdn.playground-v2.programiz.com/assets/icons/share.svg" />
+              Share
+            </button>
+            <button class="share-button tablet-share" title="Share">
+              <img class="toggle-expanded-mode-mobile-icon svg share-icon" src="https://cdn.playground-v2.programiz.com/assets/icons/share.svg" />
+            </button>
+            <button class="desktop-run-button run">
+              <span class="run-text">
+                &nbsp;Run&nbsp;
+              </span>
+            </button>
+          </div>
+        </div>
+        <button class="mobile-run-button run">
+          Run
+        </button>
+        <div id="editor">// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+    }
+}</div>
+      </div>
+
+      <div class="terminal-wrapper">
+        <div class="terminal-desktop-top-bar">
+          <div class="shell-name">
+            Output          </div>
+          <div class="terminal-desktop-top-bar__btn-wrapper">
+            <button class="desktop-clear-button">
+              &nbsp;Clear&nbsp;
+            </button>
+          </div>
+        </div>
+        <div id="terminal"></div>
+      </div>
+
+      <div class="compiler-right-sidebar-ad">
+        <!-- Pub-galaxy -->
+        <div id="programizcom47802"></div>
+      </div>
+    </div>
+  </div>
+
+  <script defer type="text/javascript">
+    const lang = "java";
+
+    var playStoreUrl =
+      "https://play.google.com/store/apps/details?id=com.programiz.learnpython",
+      appStoreUrl =
+        "https://apps.apple.com/app/apple-store/id1472188189?pt=120228772",
+      desktopUrl = "https://www.programiz.com/learn-python";
+
+    const desktopAdsButton = document.getElementById("ad-link");
+    const mobileAdsButton = document.getElementById("mobile-ad-link");
+
+    const challengeLinkProbability = 0 / 100; // in percentage
+    const hasChallengeLinkAsAds = Math.random() <= challengeLinkProbability;
+
+    if (hasChallengeLinkAsAds) {
+      const baseURL = "https://app.programiz.pro/community-challenges/home"
+      desktopAdsButton.innerHTML = `Python Challenges ❯`;
+      mobileAdsButton.innerHTML = `Python Challenges`;
+      desktopAdsButton.href = baseURL;
+      mobileAdsButton.href = baseURL;
+    } else {
+      const utm = "utm_source=programiz_compiler&utm_medium=referral&utm_audience=ORGANIC-FREEMIUM&utm_campaign=offer-pro&utm_content=interests_pro&utm_term=nav_floating_button"
+      const baseURL = `https://programiz.pro?${utm}`
+
+      desktopAdsButton.innerHTML = `Programiz PRO ❯`;
+      mobileAdsButton.innerHTML = `Programiz PRO`;
+      desktopAdsButton.href = baseURL;
+      mobileAdsButton.href = baseURL;
+    }
+
+    desktopAdsButton.target = "_blank"
+    mobileAdsButton.target = "_blank"
+  </script>
+  <!-- The use of the cloudflare cdn for all external libraries is intential. We are trying to reduce the number
+         of DNS lookups.
+    -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.41.0/ace.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
+  <script defer src="https://cdn.playground-v2.programiz.com/build/final.bb49e05630288743055e.js"></script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKXT7MH" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0a465ad039704d1f9760ad556f6f3cdd","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
